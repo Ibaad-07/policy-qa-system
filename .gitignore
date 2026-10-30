@@ -1,0 +1,17 @@
+# Rebuilt locally by `python index.py`
+qdrant_db/
+index_manifest.json
+
+# Local LLM response cache (regenerated on first run)
+llm_cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / tool settings
+.claude/
+.vscode/
+.idea/

@@ -1,0 +1,268 @@
+{
+  "config_name": "clause/hybrid+rerank",
+  "config": {
+    "chunking": "clause",
+    "mode": "hybrid",
+    "rerank": true,
+    "hyde": false,
+    "multiquery": false,
+    "top_k": 5,
+    "doc_id": null
+  },
+  "llm": "llama3.2:3b",
+  "rows": [
+    {
+      "id": "q38",
+      "category": "amendment",
+      "question": "What is the daily allowance for domestic travel?",
+      "answer": "The daily allowance for domestic travel is PKR 3,500 per day, but it will be increased to PKR 4,500 per day starting from 1 September 2026 (KA-AMD-2026-01, clause 1.1).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "1.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::5.2",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-05::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.0002626000205054879,
+        "dense": 0.01916610007174313,
+        "rrf": 6.660004146397114e-05,
+        "rerank": 0.3159571998985484,
+        "generate": 0.12234180001541972
+      }
+    },
+    {
+      "id": "q39",
+      "category": "amendment",
+      "question": "What is the mileage rate for using my own car?",
+      "answer": "The mileage rate for using your own car is PKR 55 per kilometre, as amended by Policy Amendment Notice No. 1 of 2026 (KA-AMD-2026-01, clause 1.2).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "1.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::6.1",
+        "KA-AMD-2026-01::clause::1.2",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::5.1",
+        "KA-POL-04::clause::4.1"
+      ],
+      "timings": {
+        "bm25": 0.0004953999305143952,
+        "dense": 0.023167400038801134,
+        "rrf": 5.989999044686556e-05,
+        "rerank": 0.3670743000693619,
+        "generate": 20.321830799919553
+      }
+    },
+    {
+      "id": "q40",
+      "category": "amendment",
+      "question": "How many days per week can I work from home?",
+      "answer": "Employees whose most recent performance rating is \"Exceeds Expectations\" or higher may work remotely for up to three (3) days per week, while all other eligible employees may work remotely for up to two (2) days per week (KA-AMD-2026-01, clause 2.1).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "2.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-AMD-2026-01::clause::2.1",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::4.4",
+        "KA-POL-02::clause::3.1",
+        "KA-POL-02::clause::5.1"
+      ],
+      "timings": {
+        "bm25": 0.0003698000218719244,
+        "dense": 0.02794449997600168,
+        "rrf": 7.730000652372837e-05,
+        "rerank": 0.3137379999971017,
+        "generate": 20.761077099945396
+      }
+    },
+    {
+      "id": "q41",
+      "category": "amendment",
+      "question": "What is the daily allowance for international travel?",
+      "answer": "The daily allowance for international travel is USD 50 per day (KA-POL-05, clause 5.1).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "5.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::5.2",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::2.2"
+      ],
+      "timings": {
+        "bm25": 0.0005024999845772982,
+        "dense": 0.03352010005619377,
+        "rrf": 7.589999586343765e-05,
+        "rerank": 0.35596780001651496,
+        "generate": 8.796819100040011
+      }
+    },
+    {
+      "id": "q42",
+      "category": "out_of_scope",
+      "question": "What is the monthly stipend for interns?",
+      "answer": "This isn't covered in the policy documents I have.",
+      "citations": [],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "refusal": true
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::1.2",
+        "KA-POL-01::clause::5.3",
+        "KA-POL-01::clause::2.5",
+        "KA-POL-01::clause::5.1",
+        "KA-POL-04::clause::1.1"
+      ],
+      "timings": {
+        "bm25": 0.00033179996535182,
+        "dense": 0.027195799979381263,
+        "rrf": 6.340001709759235e-05,
+        "rerank": 0.38857080007437617,
+        "generate": 0.06159970001317561
+      }
+    },
+    {
+      "id": "q43",
+      "category": "out_of_scope",
+      "question": "What is the company's health insurance coverage limit?",
+      "answer": "This isn't covered in the policy documents I have.",
+      "citations": [],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "refusal": true
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-AMD-2026-01::clause::2.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::1.1",
+        "KA-AMD-2026-01::clause::preamble",
+        "KA-POL-05::clause::6.1"
+      ],
+      "timings": {
+        "bm25": 0.0006151000270619988,
+        "dense": 0.027920500026084483,
+        "rrf": 8.25000461190939e-05,
+        "rerank": 0.3574185000034049,
+        "generate": 13.662206900073215
+      }
+    },
+    {
+      "id": "q44",
+      "category": "out_of_scope",
+      "question": "Who is the CEO of Kestrel Analytics?",
+      "answer": "The CEO is the person to whom appeals are made if the Head of HR was involved in the original decision, (KA-POL-03, clause 7.1). The CEO is also the person required to approve international travel and unpaid leave of more than ten days, (KA-POL-05, clause 2.2 and KA-POL-02, clause 9.1). The CEO's identity is not specified in the provided policy documents, (no citation).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "7.1"
+        ],
+        [
+          "KA-POL-05",
+          "2.2"
+        ],
+        [
+          "KA-POL-02",
+          "9.1"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "did not refuse"
+      ],
+      "checks": {
+        "refusal": false
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::1.1",
+        "KA-POL-03::clause::7.1",
+        "KA-POL-05::clause::2.2",
+        "KA-POL-02::clause::9.1",
+        "KA-POL-03::clause::5.2"
+      ],
+      "timings": {
+        "bm25": 0.0004686999600380659,
+        "dense": 0.031321799964644015,
+        "rrf": 6.10999995842576e-05,
+        "rerank": 0.4042808999074623,
+        "generate": 27.52670019993093
+      }
+    }
+  ]
+}

@@ -1,0 +1,1718 @@
+{
+  "config_name": "clause/hybrid+rerank",
+  "config": {
+    "chunking": "clause",
+    "mode": "hybrid",
+    "rerank": true,
+    "hyde": false,
+    "multiquery": false,
+    "top_k": 5,
+    "doc_id": null
+  },
+  "llm": "llama3.2:3b",
+  "rows": [
+    {
+      "id": "q01",
+      "category": "exact_id",
+      "question": "What is Form HR-04 used for?",
+      "answer": "Form HR-04 is used to record the extension of probation, as stated in clause 3.2 of the Employment Policy (KA-POL-01, clause 3.2).",
+      "citations": [
+        [
+          "KA-POL-01",
+          "3.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::5.3",
+        "KA-POL-01::clause::3.2",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::6.5",
+        "KA-POL-03::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.0004257999826222658,
+        "dense": 0.028665099991485476,
+        "rrf": 7.00000673532486e-05,
+        "rerank": 0.39081519993487746,
+        "generate": 0.0005003000842407346
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, we need to check if it accurately states the purpose of Form HR-04. The answer states that Form HR-04 is used to record the extension of probation, which is consistent with clause 3.2 of the Employment Policy (KA-POL-01, clause 3.2). The answer also mentions that the extension must be recorded on Form HR-04 before the original probation period ends, which is also mentioned in the context. Therefore, the answer accurately states the purpose of Form HR-04.\n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q02",
+      "category": "exact_id",
+      "question": "What is Form EXP-07?",
+      "answer": "Form EXP-07 is an Expense Claim form used to claim expenses within thirty (30) days of returning from travel or incurring the expense, and original receipts are required for any single item above PKR 2,000 (KA-POL-05, clause 7.1).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "7.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::7.1",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-03::clause::2.3",
+        "KA-POL-01::clause::6.5"
+      ],
+      "timings": {
+        "bm25": 0.00018960004672408104,
+        "dense": 0.02484650001861155,
+        "rrf": 6.390002090483904e-05,
+        "rerank": 0.4035527999512851,
+        "generate": 0.0008187000639736652
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, let's analyze the information provided. The answer states that Form EXP-07 is used to claim expenses within thirty (30) days of returning from travel or incurring the expense, and original receipts are required for any single item above PKR 2,000. This matches the information provided in KA-POL-05, clause 7.1. Additionally, the answer does not mention any other context or contradict any information. \n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q03",
+      "category": "exact_id",
+      "question": "What does Section 5.2 of KA-POL-03 cover?",
+      "answer": "Section 5.2 of KA-POL-03 covers gross misconduct, which includes falsifying expense claims, timesheets, or other records, among other things. (KA-POL-03, clause 5.2)",
+      "citations": [
+        [
+          "KA-POL-03",
+          "5.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::9.1",
+        "KA-POL-03::clause::5.2",
+        "KA-POL-01::clause::6.4",
+        "KA-POL-04::clause::3.2",
+        "KA-POL-03::clause::1.2"
+      ],
+      "timings": {
+        "bm25": 0.0006093000993132591,
+        "dense": 0.027410299982875586,
+        "rrf": 4.379998426884413e-05,
+        "rerank": 0.4439625999657437,
+        "generate": 0.000700299977324903
+      }
+    },
+    {
+      "id": "q04",
+      "category": "exact_id",
+      "question": "What is extension 4357 used for?",
+      "answer": "The IT helpdesk extension 4357 is used to report a lost or stolen Company device. (KA-POL-04, clause 4.3)",
+      "citations": [
+        [
+          "KA-POL-04",
+          "4.3"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::4.3",
+        "KA-POL-01::clause::3.2",
+        "KA-POL-04::clause::6.2",
+        "KA-POL-04::clause::6.1",
+        "KA-POL-04::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.00040959997568279505,
+        "dense": 0.030233099940232933,
+        "rrf": 5.809997674077749e-05,
+        "rerank": 0.36654970003291965,
+        "generate": 0.0004977000644430518
+      }
+    },
+    {
+      "id": "q05",
+      "category": "exact_id",
+      "question": "What is Form HR-15?",
+      "answer": "Form HR-15 is a document used by employees to complete before the final settlement is processed, signed by IT, Finance, and their Line Manager. (KA-POL-01, clause 6.5)",
+      "citations": [
+        [
+          "KA-POL-01",
+          "6.5"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "missing ['exit clearance']"
+      ],
+      "checks": {
+        "must_include": false,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::6.5",
+        "KA-POL-01::clause::5.3",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::3.2",
+        "KA-POL-03::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.00025779998395591974,
+        "dense": 0.026478199986740947,
+        "rrf": 9.159999899566174e-05,
+        "rerank": 0.37014100002124906,
+        "generate": 0.0005311999702826142
+      }
+    },
+    {
+      "id": "q06",
+      "category": "exact_id",
+      "question": "What is Form COC-02 used for?",
+      "answer": "Form COC-02 is used to declare any actual or potential conflict of interest, including outside employment or a financial interest in a supplier or client, within fifteen (15) days of it arising (KA-POL-03, clause 2.1).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "2.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-03::clause::2.1",
+        "KA-POL-03::clause::2.3",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-01::clause::5.3",
+        "KA-POL-01::clause::3.2"
+      ],
+      "timings": {
+        "bm25": 0.0006938999285921454,
+        "dense": 0.031606199918314815,
+        "rrf": 7.780001033097506e-05,
+        "rerank": 0.3861798000289127,
+        "generate": 0.0005070000188425183
+      }
+    },
+    {
+      "id": "q07",
+      "category": "exact_id",
+      "question": "Which form do I need to get USB access on my laptop?",
+      "answer": "You need to submit Form IT-SEC-2 (Removable Media Exception) to request USB access on your laptop, which must be approved by the Information Security Officer. (KA-POL-04, cl. 4.2)",
+      "citations": [
+        [
+          "KA-POL-04",
+          "4.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::4.2",
+        "KA-POL-04::clause::6.2",
+        "KA-POL-04::clause::6.1",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-04::clause::4.3"
+      ],
+      "timings": {
+        "bm25": 0.00045629998203366995,
+        "dense": 0.030318299890495837,
+        "rrf": 6.950006354600191e-05,
+        "rerank": 0.4068059000419453,
+        "generate": 0.0005249000387266278
+      }
+    },
+    {
+      "id": "q08",
+      "category": "paraphrase",
+      "question": "Can I get sacked for giving my password to a coworker?",
+      "answer": "Sharing login credentials with anyone, including colleagues, is gross misconduct under Section 5.2 of the Code of Conduct (KA-POL-03, clause 5.2). This action can result in summary dismissal without notice (KA-POL-01, clause 6.4). The Company may dismiss an employee without notice for gross misconduct, as defined in Section 5.2 of the Code of Conduct and Disciplinary Procedure (KA-POL-01, clause 6.4).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "5.2"
+        ],
+        [
+          "KA-POL-01",
+          "6.4"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/2",
+      "citation_recall": 0.5,
+      "invented_citations": [
+        [
+          "KA-POL-03",
+          "5.2"
+        ]
+      ],
+      "context_ids": [
+        "KA-POL-04::clause::3.2",
+        "KA-POL-01::clause::6.4",
+        "KA-POL-03::clause::3.1",
+        "KA-POL-03::clause::6.5",
+        "KA-POL-04::clause::3.1"
+      ],
+      "timings": {
+        "bm25": 0.00039870000910013914,
+        "dense": 0.033839000039733946,
+        "rrf": 6.889994256198406e-05,
+        "rerank": 0.4642374999821186,
+        "generate": 0.0007165999850258231
+      },
+      "judge": {
+        "verdict": "UNFAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, let's analyze the information provided:\n\n1. The answer states that sharing login credentials with anyone, including colleagues, is gross misconduct under Section 5.2 of the Code of Conduct (KA-POL-03, clause 5.2).\n2. It also mentions that the Company may dismiss an employee without notice for gross misconduct, as defined in Section 5.2 of the Code of Conduct and Disciplinary Procedure (KA-POL-01, clause 6.4).\n\nHowever, the answer does not explicitly mention that the employee can be sacked for giving their password to a coworker. The provided context only mentions sharing login credentials, not giving passwords to coworkers.\n\nVERDICT: UNFAITHFUL"
+      }
+    },
+    {
+      "id": "q09",
+      "category": "paraphrase",
+      "question": "How much time off do new fathers get?",
+      "answer": "New fathers get ten (10) working days on full pay, to be taken within three (3) months of the child's birth, (KA-POL-02, clause 6.2).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "6.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::6.3",
+        "KA-POL-01::clause::3.1",
+        "KA-POL-02::clause::6.2",
+        "KA-POL-02::clause::6.1",
+        "KA-POL-02::clause::10.2"
+      ],
+      "timings": {
+        "bm25": 0.0005919999675825238,
+        "dense": 0.03272239991929382,
+        "rrf": 5.609996151179075e-05,
+        "rerank": 0.41160720004700124,
+        "generate": 0.0005243999185040593
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, we need to check if it states any facts that are not in the context or contradicts it. The answer states that new fathers get ten (10) working days on full pay, to be taken within three (3) months of the child's birth, which is consistent with the information provided in clause 6.2 of the leave policy.\n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q10",
+      "category": "paraphrase",
+      "question": "I lost my work laptop at the airport. What should I do?",
+      "answer": "You must report the loss to the IT helpdesk (extension 4357) within two (2) hours of discovering the loss (KA-POL-04, clause 4.3). You must also submit Form IT-SEC-5 (Security Incident Report) within twenty-four (24) hours (KA-POL-04, clause 4.3).",
+      "citations": [
+        [
+          "KA-POL-04",
+          "4.3"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::4.3",
+        "KA-POL-04::clause::4.2",
+        "KA-POL-04::clause::6.2",
+        "KA-POL-04::clause::3.4",
+        "KA-POL-05::clause::3.1"
+      ],
+      "timings": {
+        "bm25": 0.00032380002085119486,
+        "dense": 0.028735000058077276,
+        "rrf": 6.810005288571119e-05,
+        "rerank": 0.45627339999191463,
+        "generate": 0.0007542000385001302
+      }
+    },
+    {
+      "id": "q11",
+      "category": "paraphrase",
+      "question": "Do I get paid extra for staying late at work?",
+      "answer": "You do not receive a specific mention of being paid extra for staying late at work in the provided policy documents. However, non-managerial employees are paid overtime at 1.5 times their hourly basic rate for hours worked beyond 45 hours in a week, but this does not explicitly state payment for staying late. (KA-POL-01, clause 4.4)",
+      "citations": [
+        [
+          "KA-POL-01",
+          "4.4"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::10.2",
+        "KA-POL-01::clause::4.4",
+        "KA-POL-03::clause::5.1",
+        "KA-POL-01::clause::6.5",
+        "KA-POL-02::clause::3.1"
+      ],
+      "timings": {
+        "bm25": 0.0006209999555721879,
+        "dense": 0.028780699940398335,
+        "rrf": 8.270004764199257e-05,
+        "rerank": 0.42720070003997535,
+        "generate": 0.0006978999590501189
+      }
+    },
+    {
+      "id": "q12",
+      "category": "paraphrase",
+      "question": "A close relative of mine passed away. How many days off can I take?",
+      "answer": "You may take three (3) days of paid bereavement leave on the death of an immediate family member (spouse, child, parent or sibling), and one (1) day on the death of a grandparent, (KA-POL-02, clause 7.1).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "7.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::7.1",
+        "KA-POL-02::clause::10.2",
+        "KA-POL-02::clause::8.1",
+        "KA-POL-01::clause::6.6",
+        "KA-POL-02::clause::9.1"
+      ],
+      "timings": {
+        "bm25": 0.0008135000243782997,
+        "dense": 0.03112269996199757,
+        "rrf": 7.51999905332923e-05,
+        "rerank": 0.41892660001758486,
+        "generate": 0.0007627001032233238
+      }
+    },
+    {
+      "id": "q13",
+      "category": "paraphrase",
+      "question": "What happens if I keep coming in late?",
+      "answer": "If you keep coming in late, it will be considered minor misconduct and may result in up to three (3) late arrivals in a calendar month, after which further instances may lead to more severe disciplinary action, (KA-POL-03, clause 5.1).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "5.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-03::clause::5.1",
+        "KA-POL-02::clause::3.4",
+        "KA-POL-04::clause::7.1",
+        "KA-POL-01::clause::6.5",
+        "KA-AMD-2026-01::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.0005300999619066715,
+        "dense": 0.032668799976818264,
+        "rrf": 5.8699981309473515e-05,
+        "rerank": 0.3770230000372976,
+        "generate": 0.0006602000212296844
+      }
+    },
+    {
+      "id": "q14",
+      "category": "paraphrase",
+      "question": "Can I keep client files on my personal phone?",
+      "answer": "Client data must never be stored on personal devices (KA-POL-04, cl. 4.1).",
+      "citations": [
+        [
+          "KA-POL-04",
+          "4.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::4.1",
+        "KA-POL-04::clause::5.2",
+        "KA-POL-04::clause::8.1",
+        "KA-POL-03::clause::3.1",
+        "KA-POL-03::clause::5.2"
+      ],
+      "timings": {
+        "bm25": 0.0005494999932125211,
+        "dense": 0.033905799966305494,
+        "rrf": 7.269997149705887e-05,
+        "rerank": 0.4534038999117911,
+        "generate": 0.0007573000621050596
+      }
+    },
+    {
+      "id": "q15",
+      "category": "paraphrase",
+      "question": "Can I do my work from a cafe using their Wi-Fi?",
+      "answer": "Yes, you can use the cafe's Wi-Fi, but only if you are connected to the company's VPN. (KA-POL-04, clause 6.2)",
+      "citations": [
+        [
+          "KA-POL-04",
+          "6.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::6.2",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::4.2",
+        "KA-POL-04::clause::2.1",
+        "KA-POL-03::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.0005914000794291496,
+        "dense": 0.03365119989030063,
+        "rrf": 8.310005068778992e-05,
+        "rerank": 0.41533590003382415,
+        "generate": 0.0007399999303743243
+      }
+    },
+    {
+      "id": "q16",
+      "category": "detail",
+      "question": "What is the maximum hotel rate per night in Lahore?",
+      "answer": "The maximum hotel rate per night in Lahore is PKR 12,000 (KA-POL-05, cl. 4.1).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "4.1"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "missing ['18,000']"
+      ],
+      "checks": {
+        "must_include": false,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::4.1",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-AMD-2026-01::clause::1.2"
+      ],
+      "timings": {
+        "bm25": 0.000654200091958046,
+        "dense": 0.033184300060383976,
+        "rrf": 7.409998215734959e-05,
+        "rerank": 0.40503189992159605,
+        "generate": 0.0006664000684395432
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, we need to check if the information about the maximum hotel rate per night in Lahore is stated in the context. The context states that the maximum hotel rate per night in Lahore is PKR 12,000, which matches the answer. Additionally, the context also states that the maximum hotel rate per night in Karachi is PKR 18,000, but does not mention Lahore. Therefore, the answer only mentions Lahore, which is present in the context.\n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q17",
+      "category": "detail",
+      "question": "How many sick days do employees get per year?",
+      "answer": "Employees are entitled to ten (10) days of sick leave per leave year on full pay (KA-POL-02, clause 4.1).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "4.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::4.1",
+        "KA-POL-02::clause::9.1",
+        "KA-POL-02::clause::5.1",
+        "KA-POL-02::clause::3.1",
+        "KA-POL-02::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.0008483999408781528,
+        "dense": 0.02967970003373921,
+        "rrf": 9.910005610436201e-05,
+        "rerank": 0.3809387000510469,
+        "generate": 0.0006288000149652362
+      }
+    },
+    {
+      "id": "q18",
+      "category": "detail",
+      "question": "What is the minimum password length?",
+      "answer": "Passwords must be at least fourteen (14) characters long, (KA-POL-04, clause 3.1)",
+      "citations": [
+        [
+          "KA-POL-04",
+          "3.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::3.1",
+        "KA-POL-04::clause::3.3",
+        "KA-POL-04::clause::3.2",
+        "KA-POL-04::clause::4.2",
+        "KA-POL-04::clause::7.1"
+      ],
+      "timings": {
+        "bm25": 0.0004938000347465277,
+        "dense": 0.032495600054971874,
+        "rrf": 6.38000201433897e-05,
+        "rerank": 0.3826870999764651,
+        "generate": 0.0008845999836921692
+      }
+    },
+    {
+      "id": "q19",
+      "category": "detail",
+      "question": "How many failed login attempts lock an account?",
+      "answer": "Five (5) failed login attempts lock an account, and to unlock an account, a ticket must be raised with the IT helpdesk (KA-POL-04, clause 3.4).",
+      "citations": [
+        [
+          "KA-POL-04",
+          "3.4"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-04::clause::3.4",
+        "KA-POL-04::clause::3.2",
+        "KA-POL-04::clause::3.1",
+        "KA-POL-03::clause::5.1",
+        "KA-POL-04::clause::7.1"
+      ],
+      "timings": {
+        "bm25": 0.0006889000069350004,
+        "dense": 0.03328549989964813,
+        "rrf": 5.430006422102451e-05,
+        "rerank": 0.4473515000427142,
+        "generate": 0.0009185000089928508
+      }
+    },
+    {
+      "id": "q20",
+      "category": "detail",
+      "question": "How long does a written warning stay valid?",
+      "answer": "A written warning is valid for twelve (12) months, (KA-POL-03, clause 6.2).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "6.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-03::clause::6.2",
+        "KA-POL-03::clause::6.3",
+        "KA-POL-03::clause::6.6",
+        "KA-POL-03::clause::6.1",
+        "KA-POL-03::clause::6.4"
+      ],
+      "timings": {
+        "bm25": 0.0005413000471889973,
+        "dense": 0.033151299925521016,
+        "rrf": 6.500002928078175e-05,
+        "rerank": 0.4087838000850752,
+        "generate": 0.0007517000194638968
+      }
+    },
+    {
+      "id": "q21",
+      "category": "detail",
+      "question": "What is the hotel limit per night in London?",
+      "answer": "The hotel limit per night in London is USD 220 (KA-POL-05, clause 4.2).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "4.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::4.1",
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-AMD-2026-01::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.0006159000331535935,
+        "dense": 0.030480299959890544,
+        "rrf": 6.829993799328804e-05,
+        "rerank": 0.3879527000244707,
+        "generate": 0.0006903000175952911
+      }
+    },
+    {
+      "id": "q22",
+      "category": "detail",
+      "question": "How long is maternity leave?",
+      "answer": "Maternity leave is sixteen (16) weeks on full pay for employees with at least six (6) months of continuous service. (KA-POL-02, clause 6.1)",
+      "citations": [
+        [
+          "KA-POL-02",
+          "6.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::6.1",
+        "KA-POL-02::clause::6.2",
+        "KA-POL-02::clause::6.3",
+        "KA-POL-02::clause::7.1",
+        "KA-POL-02::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.0005047000013291836,
+        "dense": 0.02577379997819662,
+        "rrf": 8.050003089010715e-05,
+        "rerank": 0.3715077000670135,
+        "generate": 0.0004944999236613512
+      }
+    },
+    {
+      "id": "q23",
+      "category": "exception",
+      "question": "Can I carry forward my unused annual leave?",
+      "answer": "Up to ten (10) days of unused annual leave may be carried forward into the next leave year, (KA-POL-02, clause 3.4).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "3.4"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "missing ['31 December']"
+      ],
+      "checks": {
+        "must_include": false,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::3.4",
+        "KA-POL-02::clause::4.3",
+        "KA-POL-01::clause::6.6",
+        "KA-POL-02::clause::3.3",
+        "KA-POL-02::clause::3.2"
+      ],
+      "timings": {
+        "bm25": 0.0004118999931961298,
+        "dense": 0.02723170001991093,
+        "rrf": 7.810001261532307e-05,
+        "rerank": 0.4074685999657959,
+        "generate": 0.0006688999710604548
+      },
+      "judge": {
+        "verdict": "UNFAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, let's analyze the statement. The answer states that up to ten (10) days of unused annual leave may be carried forward into the next leave year. This is consistent with the context provided, which also states that up to ten (10) days of unused annual leave may be carried forward into the next leave year (KA-POL-02, clause 3.4). However, the context also mentions an exception for refused days, which is not mentioned in the answer. \n\nVERDICT: UNFAITHFUL"
+      }
+    },
+    {
+      "id": "q24",
+      "category": "exception",
+      "question": "Can I take annual leave while on probation?",
+      "answer": "Employees on probation are not entitled to annual leave, but with Line Manager approval, they may take up to two (2) days of unpaid leave during probation (KA-POL-02, clause 3.2).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "3.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::3.2",
+        "KA-POL-02::clause::3.1",
+        "KA-POL-01::clause::3.4",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::6.1"
+      ],
+      "timings": {
+        "bm25": 0.0005266000516712666,
+        "dense": 0.028121299925260246,
+        "rrf": 7.509998977184296e-05,
+        "rerank": 0.4030997999943793,
+        "generate": 0.0004944000393152237
+      }
+    },
+    {
+      "id": "q25",
+      "category": "exception",
+      "question": "Can I fly business class on an international trip?",
+      "answer": "Business class is allowed only on flights longer than eight (8) hours, and only for employees at Grade 7 or above. (KA-POL-05, clause 3.1)",
+      "citations": [
+        [
+          "KA-POL-05",
+          "3.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::3.1",
+        "KA-POL-05::clause::2.2",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-05::clause::5.1"
+      ],
+      "timings": {
+        "bm25": 0.00031809997744858265,
+        "dense": 0.025007299962453544,
+        "rrf": 6.440002471208572e-05,
+        "rerank": 0.4102726000128314,
+        "generate": 0.0004860000917688012
+      }
+    },
+    {
+      "id": "q26",
+      "category": "exception",
+      "question": "Will the company reimburse a parking fine from a business trip?",
+      "answer": "The company will not reimburse traffic and parking fines. (KA-POL-05, clause 8.1)",
+      "citations": [
+        [
+          "KA-POL-05",
+          "8.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::8.1",
+        "KA-POL-05::clause::6.1",
+        "KA-POL-05::clause::1.1",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-05::clause::3.2"
+      ],
+      "timings": {
+        "bm25": 0.0004381999606266618,
+        "dense": 0.029425299959257245,
+        "rrf": 8.25999304652214e-05,
+        "rerank": 0.4230912000639364,
+        "generate": 0.0007159999804571271
+      }
+    },
+    {
+      "id": "q27",
+      "category": "exception",
+      "question": "Can unused sick leave be paid out?",
+      "answer": "Unused sick leave cannot be paid out, as it cannot be carried forward or encashed (KA-POL-02, clause 4.3).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "4.3"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::6.6",
+        "KA-POL-02::clause::4.3",
+        "KA-POL-02::clause::4.1",
+        "KA-POL-02::clause::3.4",
+        "KA-POL-02::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.000591500080190599,
+        "dense": 0.027216000016778708,
+        "rrf": 7.920002099126577e-05,
+        "rerank": 0.38727089995518327,
+        "generate": 0.0006479999283328652
+      }
+    },
+    {
+      "id": "q28",
+      "category": "exception",
+      "question": "Can I combine casual leave with annual leave?",
+      "answer": "No, casual leave cannot be combined with annual leave (KA-POL-02, clause 5.2).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "5.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::5.2",
+        "KA-POL-02::clause::5.1",
+        "KA-POL-02::clause::3.4",
+        "KA-POL-02::clause::3.3",
+        "KA-POL-02::clause::3.1"
+      ],
+      "timings": {
+        "bm25": 0.00051249994430691,
+        "dense": 0.031247399980202317,
+        "rrf": 8.449994493275881e-05,
+        "rerank": 0.38605039997491986,
+        "generate": 0.0007096999324858189
+      }
+    },
+    {
+      "id": "q29",
+      "category": "cross_reference",
+      "question": "What happens if someone submits a fake expense claim, and how long do they have to respond to the show-cause notice?",
+      "answer": "Submitting a false or inflated claim is gross misconduct under Section 5.2 of the Code of Conduct and Disciplinary Procedure (KA-POL-03) and may lead to summary dismissal (KA-POL-05, clause 9.1). The employee has five (5) working days to respond in writing to a show-cause notice (KA-POL-03, clause 6.6).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "9.1"
+        ],
+        [
+          "KA-POL-03",
+          "6.6"
+        ],
+        [
+          "KA-POL-03",
+          "5.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 1.0,
+      "invented_citations": [
+        [
+          "KA-POL-03",
+          "5.2"
+        ]
+      ],
+      "context_ids": [
+        "KA-POL-03::clause::6.6",
+        "KA-POL-05::clause::7.2",
+        "KA-POL-05::clause::9.1",
+        "KA-POL-05::clause::7.1",
+        "KA-POL-05::clause::2.2"
+      ],
+      "timings": {
+        "bm25": 0.0010755000403150916,
+        "dense": 0.03595380007755011,
+        "rrf": 0.00010910001583397388,
+        "rerank": 0.4658502000384033,
+        "generate": 0.000862700049765408
+      },
+      "judge": {
+        "verdict": "UNFAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, let's analyze the information provided. The answer correctly states that submitting a false or inflated claim is gross misconduct under Section 5.2 of the Code of Conduct and Disciplinary Procedure (KA-POL-03) and may lead to summary dismissal (KA-POL-05, clause 9.1). However, it does not mention the time limit for responding to a show-cause notice, which is stated in KA-POL-03, clause 6.6. The answer only mentions the time limit for submitting expense claims, which is not relevant to the scenario of submitting a fake expense claim.\n\nVERDICT: UNFAITHFUL"
+      }
+    },
+    {
+      "id": "q30",
+      "category": "cross_reference",
+      "question": "If I am dismissed for gross misconduct, am I entitled to a notice period?",
+      "answer": "No, the Company may dismiss an employee without notice (summary dismissal) for gross misconduct, as defined in Section 5.2 of the Code of Conduct and Disciplinary Procedure (KA-POL-03, clause 6.4).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "6.4"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "cited [('KA-POL-03', '6.4')], expected one of [('KA-POL-01', '6.4')]"
+      ],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": false
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 0.0,
+      "invented_citations": [
+        [
+          "KA-POL-03",
+          "6.4"
+        ]
+      ],
+      "context_ids": [
+        "KA-POL-01::clause::6.4",
+        "KA-POL-03::clause::6.5",
+        "KA-POL-05::clause::9.1",
+        "KA-POL-03::clause::6.7",
+        "KA-POL-03::clause::6.6"
+      ],
+      "timings": {
+        "bm25": 0.0008339999476447701,
+        "dense": 0.028224000008776784,
+        "rrf": 7.6299998909235e-05,
+        "rerank": 0.4704219000414014,
+        "generate": 0.0007142999675124884
+      }
+    },
+    {
+      "id": "q31",
+      "category": "cross_reference",
+      "question": "If the Head of HR was involved in my disciplinary decision, who do I appeal to and by when?",
+      "answer": "You appeal to the CEO, and you must do so within ten (10) working days of receiving the disciplinary decision, (KA-POL-03, clause 7.1).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "7.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-03::clause::7.1",
+        "KA-POL-03::clause::2.2",
+        "KA-POL-03::clause::7.2",
+        "KA-POL-03::clause::6.6",
+        "KA-POL-03::clause::6.7"
+      ],
+      "timings": {
+        "bm25": 0.0007037000032141805,
+        "dense": 0.035116199986077845,
+        "rrf": 7.569999434053898e-05,
+        "rerank": 0.42628559994045645,
+        "generate": 0.0007423999486491084
+      }
+    },
+    {
+      "id": "q32",
+      "category": "cross_reference",
+      "question": "I worked on a public holiday. What do I get?",
+      "answer": "You receive one compensatory day off, to be taken within thirty (30) days, (KA-POL-02, clause 10.2). Non-managerial employees may choose overtime pay under clause 4.4 of the Employment Policy (KA-POL-01, clause 4.4).",
+      "citations": [
+        [
+          "KA-POL-02",
+          "10.2"
+        ],
+        [
+          "KA-POL-01",
+          "4.4"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "missing ['2']"
+      ],
+      "checks": {
+        "must_include": false,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-02::clause::10.2",
+        "KA-POL-01::clause::4.4",
+        "KA-POL-01::clause::2.4",
+        "KA-POL-02::clause::10.1",
+        "KA-POL-01::clause::4.1"
+      ],
+      "timings": {
+        "bm25": 0.0005474999779835343,
+        "dense": 0.03447249997407198,
+        "rrf": 6.520003080368042e-05,
+        "rerank": 0.42036150000058115,
+        "generate": 0.000707700033672154
+      }
+    },
+    {
+      "id": "q33",
+      "category": "near_duplicate",
+      "question": "If I resign after my probation, how much notice do I need to give?",
+      "answer": "You must give thirty (30) days' written notice of resignation after completing probation, (KA-POL-01, clause 6.1).",
+      "citations": [
+        [
+          "KA-POL-01",
+          "6.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::6.1",
+        "KA-POL-01::clause::3.4",
+        "KA-POL-01::clause::6.2",
+        "KA-POL-02::clause::3.2",
+        "KA-POL-02::clause::3.1"
+      ],
+      "timings": {
+        "bm25": 0.0007801000028848648,
+        "dense": 0.046560199931263924,
+        "rrf": 8.679996244609356e-05,
+        "rerank": 0.3606269999872893,
+        "generate": 0.0007931999862194061
+      },
+      "judge": {
+        "verdict": "UNFAITHFUL",
+        "reasoning": "To determine the correct answer, we need to consider the context provided. According to KA-POL-01 cl. 6.1, after probation, a Permanent Employee must give thirty (30) days' written notice of resignation. However, the answer provided states that the employee must give thirty (30) days' written notice after completing probation, which is not explicitly stated in the context. \n\nThe correct interpretation should be that the employee must give thirty (30) days' written notice after completing probation, as stated in KA-POL-01 cl. 6.1. The answer provided is not entirely faithful to the context.\n\nVERDICT: UNFAITHFUL"
+      }
+    },
+    {
+      "id": "q34",
+      "category": "near_duplicate",
+      "question": "What is the notice period during probation?",
+      "answer": "Either the employee or the Company may give seven (7) days' written notice to end employment during probation, (KA-POL-01, clause 3.4).",
+      "citations": [
+        [
+          "KA-POL-01",
+          "3.4"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::3.4",
+        "KA-POL-01::clause::6.1",
+        "KA-POL-01::clause::3.1",
+        "KA-POL-02::clause::3.2",
+        "KA-POL-01::clause::3.2"
+      ],
+      "timings": {
+        "bm25": 0.00031319994013756514,
+        "dense": 0.023274100036360323,
+        "rrf": 7.960002403706312e-05,
+        "rerank": 0.310155599960126,
+        "generate": 0.0006881000008434057
+      }
+    },
+    {
+      "id": "q35",
+      "category": "near_duplicate",
+      "question": "What is the notice period for contract employees?",
+      "answer": "Contract Employees must give fifteen (15) days' written notice, unless their contract states a different period. (KA-POL-01, clause 6.2)",
+      "citations": [
+        [
+          "KA-POL-01",
+          "6.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::6.2",
+        "KA-POL-01::clause::6.1",
+        "KA-POL-01::clause::3.3",
+        "KA-POL-01::clause::6.3",
+        "KA-AMD-2026-01::clause::2.1"
+      ],
+      "timings": {
+        "bm25": 0.000538799911737442,
+        "dense": 0.028017999953590333,
+        "rrf": 8.330005221068859e-05,
+        "rerank": 0.399050600011833,
+        "generate": 0.0007274000672623515
+      }
+    },
+    {
+      "id": "q36",
+      "category": "near_duplicate",
+      "question": "How many unused annual leave days are paid out when I leave the company?",
+      "answer": "Unused annual leave is paid out (encashed) in the final settlement, up to a maximum of fifteen (15) days. (KA-POL-01, clause 6.6)",
+      "citations": [
+        [
+          "KA-POL-01",
+          "6.6"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::6.6",
+        "KA-POL-02::clause::3.1",
+        "KA-POL-02::clause::3.4",
+        "KA-POL-02::clause::9.1",
+        "KA-POL-02::clause::5.1"
+      ],
+      "timings": {
+        "bm25": 0.001066399971023202,
+        "dense": 0.03473640000447631,
+        "rrf": 7.730000652372837e-05,
+        "rerank": 0.4210550000425428,
+        "generate": 0.0007247999310493469
+      }
+    },
+    {
+      "id": "q37",
+      "category": "near_duplicate",
+      "question": "How far in advance must I request international travel?",
+      "answer": "You must submit your request at least fifteen (15) working days before departure, (KA-POL-05, clause 2.2).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "2.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::2.2",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-02::clause::3.3",
+        "KA-POL-01::clause::5.3",
+        "KA-POL-05::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.0006520000752061605,
+        "dense": 0.03323230007663369,
+        "rrf": 7.960002403706312e-05,
+        "rerank": 0.4272390999831259,
+        "generate": 0.00045659998431801796
+      }
+    },
+    {
+      "id": "q38",
+      "category": "amendment",
+      "question": "What is the daily allowance for domestic travel?",
+      "answer": "The daily allowance for domestic travel is PKR 3,500 per day, but it will be increased to PKR 4,500 per day starting from 1 September 2026 (KA-AMD-2026-01, clause 1.1).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "1.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::5.2",
+        "KA-POL-05::clause::2.1",
+        "KA-POL-05::clause::4.2"
+      ],
+      "timings": {
+        "bm25": 0.0002804999239742756,
+        "dense": 0.02428919996600598,
+        "rrf": 6.849993951618671e-05,
+        "rerank": 0.41203739994671196,
+        "generate": 0.0006577000021934509
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, we need to check if it states the correct information about the daily allowance for domestic travel. The answer states that the daily allowance for domestic travel is PKR 3,500 per day, which is correct according to the context. However, it also mentions that the allowance will be increased to PKR 4,500 per day starting from 1 September 2026, which is also correct according to the context.\n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q39",
+      "category": "amendment",
+      "question": "What is the mileage rate for using my own car?",
+      "answer": "The mileage rate for using your own car is PKR 55 per kilometre, as amended by Policy Amendment Notice No. 1 of 2026 (KA-AMD-2026-01, clause 1.2).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "1.2"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::6.1",
+        "KA-AMD-2026-01::clause::1.2",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::5.1",
+        "KA-POL-04::clause::4.1"
+      ],
+      "timings": {
+        "bm25": 0.0005582000594586134,
+        "dense": 0.032338199904188514,
+        "rrf": 6.130000110715628e-05,
+        "rerank": 0.4164365000324324,
+        "generate": 0.0007144000846892595
+      }
+    },
+    {
+      "id": "q40",
+      "category": "amendment",
+      "question": "How many days per week can I work from home?",
+      "answer": "Employees whose most recent performance rating is \"Exceeds Expectations\" or higher may work remotely for up to three (3) days per week, while all other eligible employees may work remotely for up to two (2) days per week (KA-AMD-2026-01, clause 2.1).",
+      "citations": [
+        [
+          "KA-AMD-2026-01",
+          "2.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "2/2",
+      "citation_recall": 0.5,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-AMD-2026-01::clause::2.1",
+        "KA-POL-01::clause::4.3",
+        "KA-POL-01::clause::4.4",
+        "KA-POL-02::clause::3.1",
+        "KA-POL-02::clause::5.1"
+      ],
+      "timings": {
+        "bm25": 0.0006716001080349088,
+        "dense": 0.03346260008402169,
+        "rrf": 8.130003698170185e-05,
+        "rerank": 0.4042935000034049,
+        "generate": 0.0007939999923110008
+      }
+    },
+    {
+      "id": "q41",
+      "category": "amendment",
+      "question": "What is the daily allowance for international travel?",
+      "answer": "The daily allowance for international travel is USD 50 per day (KA-POL-05, clause 5.1).",
+      "citations": [
+        [
+          "KA-POL-05",
+          "5.1"
+        ]
+      ],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "must_include": true,
+        "must_not_include": true,
+        "cites_expected": true
+      },
+      "sources_in_context": "1/1",
+      "citation_recall": 1.0,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-05::clause::5.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::5.2",
+        "KA-POL-05::clause::4.2",
+        "KA-POL-05::clause::2.2"
+      ],
+      "timings": {
+        "bm25": 0.0006559999892488122,
+        "dense": 0.025893100071698427,
+        "rrf": 3.9899954572319984e-05,
+        "rerank": 0.4026654999470338,
+        "generate": 0.000721900025382638
+      }
+    },
+    {
+      "id": "q42",
+      "category": "out_of_scope",
+      "question": "What is the monthly stipend for interns?",
+      "answer": "This isn't covered in the policy documents I have.",
+      "citations": [],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "refusal": true
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::1.2",
+        "KA-POL-01::clause::5.3",
+        "KA-POL-01::clause::2.5",
+        "KA-POL-01::clause::5.1",
+        "KA-POL-04::clause::1.1"
+      ],
+      "timings": {
+        "bm25": 0.00042459997348487377,
+        "dense": 0.03399399993941188,
+        "rrf": 6.799993570894003e-05,
+        "rerank": 0.4065457000397146,
+        "generate": 0.0004973000613972545
+      },
+      "judge": {
+        "verdict": "FAITHFUL",
+        "reasoning": "To determine if the answer is faithful to its context, we need to check if it states anything that is not in the context or contradicts it. The answer states that the monthly stipend for interns is not covered in the policy documents. However, the context explicitly states that interns are not covered by the employment policy, and their terms are set out separately in the Internship Guidelines (KA-POL-07). Since the answer does not contradict the context and only states what is explicitly stated in the context, it is faithful to its context.\n\nVERDICT: FAITHFUL"
+      }
+    },
+    {
+      "id": "q43",
+      "category": "out_of_scope",
+      "question": "What is the company's health insurance coverage limit?",
+      "answer": "This isn't covered in the policy documents I have.",
+      "citations": [],
+      "passed": true,
+      "failure": null,
+      "reasons": [],
+      "checks": {
+        "refusal": true
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-AMD-2026-01::clause::2.1",
+        "KA-AMD-2026-01::clause::1.1",
+        "KA-POL-05::clause::1.1",
+        "KA-AMD-2026-01::clause::preamble",
+        "KA-POL-05::clause::6.1"
+      ],
+      "timings": {
+        "bm25": 0.00036479998379945755,
+        "dense": 0.023160799988545477,
+        "rrf": 7.810001261532307e-05,
+        "rerank": 0.4125072000315413,
+        "generate": 0.0006291999015957117
+      }
+    },
+    {
+      "id": "q44",
+      "category": "out_of_scope",
+      "question": "Who is the CEO of Kestrel Analytics?",
+      "answer": "The CEO is the person to whom appeals are made if the Head of HR was involved in the original decision, (KA-POL-03, clause 7.1). The CEO is also the person required to approve international travel and unpaid leave of more than ten days, (KA-POL-05, clause 2.2 and KA-POL-02, clause 9.1). The CEO's identity is not specified in the provided policy documents, (no citation).",
+      "citations": [
+        [
+          "KA-POL-03",
+          "7.1"
+        ],
+        [
+          "KA-POL-05",
+          "2.2"
+        ],
+        [
+          "KA-POL-02",
+          "9.1"
+        ]
+      ],
+      "passed": false,
+      "failure": "generation error",
+      "reasons": [
+        "did not refuse"
+      ],
+      "checks": {
+        "refusal": false
+      },
+      "sources_in_context": "0/0",
+      "citation_recall": null,
+      "invented_citations": [],
+      "context_ids": [
+        "KA-POL-01::clause::1.1",
+        "KA-POL-03::clause::7.1",
+        "KA-POL-05::clause::2.2",
+        "KA-POL-02::clause::9.1",
+        "KA-POL-03::clause::5.2"
+      ],
+      "timings": {
+        "bm25": 0.00045140006113797426,
+        "dense": 0.032781300018541515,
+        "rrf": 5.7399971410632133e-05,
+        "rerank": 0.43826770002488047,
+        "generate": 0.0007627999875694513
+      }
+    }
+  ]
+}

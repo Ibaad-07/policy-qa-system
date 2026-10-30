@@ -1,0 +1,955 @@
+[
+  {
+    "id": "q01",
+    "category": "exact_id",
+    "question": "What is Form HR-04 used for?",
+    "expected_answer": "It is the Probation Review Form, used to record an extension of probation (once, by up to 3 months, with HR approval).",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "3.2",
+        "page": 1,
+        "snippet": "The Line Manager may extend probation once, by"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "probation"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q02",
+    "category": "exact_id",
+    "question": "What is Form EXP-07?",
+    "expected_answer": "The Expense Claim form. Claims are due within 30 days, with original receipts for any item above PKR 2,000.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "7.1",
+        "page": 2,
+        "snippet": "Expenses are claimed on Form EXP-07 (Expense Claim)"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "expense claim"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q03",
+    "category": "exact_id",
+    "question": "What does Section 5.2 of KA-POL-03 cover?",
+    "expected_answer": "Gross misconduct: theft or fraud, falsifying records or expense claims, sharing credentials or bypassing security, disclosing client data, violence, harassment, alcohol or drugs at work.",
+    "expected_sources": [
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "5.2",
+        "page": 1,
+        "snippet": "Gross misconduct includes: theft or fraud; falsifying expense"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "gross misconduct"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q04",
+    "category": "exact_id",
+    "question": "What is extension 4357 used for?",
+    "expected_answer": "It is the IT helpdesk extension, used for example to report a lost or stolen device within 2 hours.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "4.3",
+        "page": 1,
+        "snippet": "A lost or stolen Company device must be"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "helpdesk"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q05",
+    "category": "exact_id",
+    "question": "What is Form HR-15?",
+    "expected_answer": "The Exit Clearance form, signed by IT, Finance and the Line Manager before the final settlement is processed.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "6.5",
+        "page": 2,
+        "snippet": "Before the final settlement is processed, the employee"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "exit clearance"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q06",
+    "category": "exact_id",
+    "question": "What is Form COC-02 used for?",
+    "expected_answer": "The Conflict of Interest Declaration (within 15 days); it is also used to declare gifts above PKR 5,000 within 7 days.",
+    "expected_sources": [
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "2.1",
+        "page": 1,
+        "snippet": "Employees must declare any actual or potential conflict"
+      },
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "2.3",
+        "page": 1,
+        "snippet": "Employees may accept gifts or hospitality worth up"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "conflict of interest"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q07",
+    "category": "exact_id",
+    "question": "Which form do I need to get USB access on my laptop?",
+    "expected_answer": "Form IT-SEC-2 (Removable Media Exception), approved by the Information Security Officer, valid for at most 30 days.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "4.2",
+        "page": 1,
+        "snippet": "USB storage devices are blocked on Company laptops"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "IT-SEC-2"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q08",
+    "category": "paraphrase",
+    "question": "Can I get sacked for giving my password to a coworker?",
+    "expected_answer": "Yes. Sharing login credentials is gross misconduct, which can lead to summary dismissal.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "3.2",
+        "page": 1,
+        "snippet": "Login credentials must never be shared with anyone,"
+      },
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "5.2",
+        "page": 1,
+        "snippet": "Gross misconduct includes: theft or fraud; falsifying expense"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "gross misconduct"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q09",
+    "category": "paraphrase",
+    "question": "How much time off do new fathers get?",
+    "expected_answer": "Paternity leave of 10 working days on full pay, taken within 3 months of the birth.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "6.2",
+        "page": 2,
+        "snippet": "Paternity leave: ten (10) working days on full"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "10"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q10",
+    "category": "paraphrase",
+    "question": "I lost my work laptop at the airport. What should I do?",
+    "expected_answer": "Report it to the IT helpdesk (ext. 4357) within 2 hours and submit Form IT-SEC-5 within 24 hours.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "4.3",
+        "page": 1,
+        "snippet": "A lost or stolen Company device must be"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "2 hours",
+      "IT-SEC-5"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q11",
+    "category": "paraphrase",
+    "question": "Do I get paid extra for staying late at work?",
+    "expected_answer": "Non-managerial staff get overtime at 1.5x the hourly basic rate beyond 45 hours a week, if approved in advance.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "4.4",
+        "page": 2,
+        "snippet": "Non-managerial employees are paid overtime at 1.5 times"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "1.5",
+      "45"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q12",
+    "category": "paraphrase",
+    "question": "A close relative of mine passed away. How many days off can I take?",
+    "expected_answer": "3 days of paid bereavement leave for an immediate family member; 1 day for a grandparent.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "7.1",
+        "page": 2,
+        "snippet": "Employees may take three (3) days of paid"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "3"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q13",
+    "category": "paraphrase",
+    "question": "What happens if I keep coming in late?",
+    "expected_answer": "Arriving late more than 3 times in a calendar month is minor misconduct, handled through the disciplinary procedure (starting with a verbal warning).",
+    "expected_sources": [
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "5.1",
+        "page": 1,
+        "snippet": "Minor misconduct includes: arriving late more than three"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "minor misconduct"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q14",
+    "category": "paraphrase",
+    "question": "Can I keep client files on my personal phone?",
+    "expected_answer": "No. Client data must never be stored on personal devices; personal phones may only be used for email and chat through the approved app.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "4.1",
+        "page": 1,
+        "snippet": "Employees may use personal phones (bring your own"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "never|not allowed|cannot|can't|must not|no"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q15",
+    "category": "paraphrase",
+    "question": "Can I do my work from a cafe using their Wi-Fi?",
+    "expected_answer": "Only while connected to the Company VPN.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "6.2",
+        "page": 2,
+        "snippet": "Public Wi-Fi networks (for example in cafes, hotels"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "VPN"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q16",
+    "category": "detail",
+    "question": "What is the maximum hotel rate per night in Lahore?",
+    "expected_answer": "PKR 18,000 per night.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "4.1",
+        "page": 1,
+        "snippet": "Maximum hotel rates per night: Karachi, Lahore and"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "18,000"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q17",
+    "category": "detail",
+    "question": "How many sick days do employees get per year?",
+    "expected_answer": "10 days on full pay (a medical certificate is needed for more than 2 consecutive days).",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "4.1",
+        "page": 1,
+        "snippet": "Employees are entitled to ten (10) days of"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "10"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q18",
+    "category": "detail",
+    "question": "What is the minimum password length?",
+    "expected_answer": "14 characters; passwords must be changed every 90 days.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "3.1",
+        "page": 1,
+        "snippet": "Passwords must be at least fourteen (14) characters"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "14"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q19",
+    "category": "detail",
+    "question": "How many failed login attempts lock an account?",
+    "expected_answer": "5 failed attempts. Unlock via an IT helpdesk ticket.",
+    "expected_sources": [
+      {
+        "file": "it_security_policy.pdf",
+        "doc_id": "KA-POL-04",
+        "clause": "3.4",
+        "page": 1,
+        "snippet": "Accounts are locked after five (5) failed login"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "5"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q20",
+    "category": "detail",
+    "question": "How long does a written warning stay valid?",
+    "expected_answer": "12 months.",
+    "expected_sources": [
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "6.2",
+        "page": 2,
+        "snippet": "Stage 2, written warning: valid for twelve (12)"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "12"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q21",
+    "category": "detail",
+    "question": "What is the hotel limit per night in London?",
+    "expected_answer": "USD 220 per night (London is a high-cost city).",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "4.2",
+        "page": 1,
+        "snippet": "International travel: USD 150 per night, or USD"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "220"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q22",
+    "category": "detail",
+    "question": "How long is maternity leave?",
+    "expected_answer": "16 weeks on full pay, for employees with at least 6 months of continuous service.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "6.1",
+        "page": 2,
+        "snippet": "Maternity leave: sixteen (16) weeks on full pay"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "16"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q23",
+    "category": "exception",
+    "question": "Can I carry forward my unused annual leave?",
+    "expected_answer": "Up to 10 days; the rest lapses on 30 June. Exception: days refused in writing for business needs can be carried in full but must be used by 31 December.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "3.4",
+        "page": 1,
+        "snippet": "Up to ten (10) days of unused annual"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "10",
+      "31 December"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q24",
+    "category": "exception",
+    "question": "Can I take annual leave while on probation?",
+    "expected_answer": "No. With Line Manager approval you may take up to 2 days of unpaid leave.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "3.2",
+        "page": 1,
+        "snippet": "Employees on probation are not entitled to annual"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "unpaid"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q25",
+    "category": "exception",
+    "question": "Can I fly business class on an international trip?",
+    "expected_answer": "Only on flights longer than 8 hours, and only at Grade 7 or above; otherwise economy.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "3.1",
+        "page": 1,
+        "snippet": "All employees travel in economy class. Business class"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "8",
+      "Grade 7"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q26",
+    "category": "exception",
+    "question": "Will the company reimburse a parking fine from a business trip?",
+    "expected_answer": "No. Traffic and parking fines are not reimbursed.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "8.1",
+        "page": 2,
+        "snippet": "The following are not reimbursed: alcohol; traffic and"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "no|not"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q27",
+    "category": "exception",
+    "question": "Can unused sick leave be paid out?",
+    "expected_answer": "No. Unused sick leave cannot be carried forward or encashed.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "4.3",
+        "page": 1,
+        "snippet": "Unused sick leave cannot be carried forward or"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "no|not|cannot"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q28",
+    "category": "exception",
+    "question": "Can I combine casual leave with annual leave?",
+    "expected_answer": "No. Casual leave cannot be combined with annual leave and is limited to 2 consecutive days.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "5.2",
+        "page": 1,
+        "snippet": "Casual leave may not exceed two (2) consecutive"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "no|not|cannot"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q29",
+    "category": "cross_reference",
+    "question": "What happens if someone submits a fake expense claim, and how long do they have to respond to the show-cause notice?",
+    "expected_answer": "It is gross misconduct and can lead to dismissal after an inquiry; the employee has 5 working days to respond to the show-cause notice.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "9.1",
+        "page": 2,
+        "snippet": "Submitting a false or inflated claim is gross"
+      },
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "6.6",
+        "page": 2,
+        "snippet": "Before any written warning or dismissal, the employee"
+      }
+    ],
+    "source_match": "all",
+    "must_include": [
+      "gross misconduct",
+      "5"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q30",
+    "category": "cross_reference",
+    "question": "If I am dismissed for gross misconduct, am I entitled to a notice period?",
+    "expected_answer": "No. The Company may dismiss without notice (summary dismissal) for gross misconduct.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "6.4",
+        "page": 2,
+        "snippet": "The Company may dismiss an employee without notice"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "without notice|no notice|not entitled|summary"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q31",
+    "category": "cross_reference",
+    "question": "If the Head of HR was involved in my disciplinary decision, who do I appeal to and by when?",
+    "expected_answer": "The CEO, within 10 working days of receiving the decision. The appeal decision comes within 15 working days and is final.",
+    "expected_sources": [
+      {
+        "file": "code_of_conduct.pdf",
+        "doc_id": "KA-POL-03",
+        "clause": "7.1",
+        "page": 2,
+        "snippet": "An employee may appeal a disciplinary decision within"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "CEO",
+      "10"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q32",
+    "category": "cross_reference",
+    "question": "I worked on a public holiday. What do I get?",
+    "expected_answer": "A compensatory day off within 30 days; non-managerial staff may instead choose overtime at 2x the hourly basic rate.",
+    "expected_sources": [
+      {
+        "file": "leave_policy.pdf",
+        "doc_id": "KA-POL-02",
+        "clause": "10.2",
+        "page": 2,
+        "snippet": "An employee required to work on a public"
+      },
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "4.4",
+        "page": 2,
+        "snippet": "Non-managerial employees are paid overtime at 1.5 times"
+      }
+    ],
+    "source_match": "all",
+    "must_include": [
+      "compensatory",
+      "2"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q33",
+    "category": "near_duplicate",
+    "question": "If I resign after my probation, how much notice do I need to give?",
+    "expected_answer": "30 days' written notice.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "6.1",
+        "page": 2,
+        "snippet": "After probation, a Permanent Employee must give thirty"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "30"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q34",
+    "category": "near_duplicate",
+    "question": "What is the notice period during probation?",
+    "expected_answer": "7 days' written notice, from either side.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "3.4",
+        "page": 1,
+        "snippet": "During probation, either the employee or the Company"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "7"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q35",
+    "category": "near_duplicate",
+    "question": "What is the notice period for contract employees?",
+    "expected_answer": "15 days, unless the contract states a different period.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "6.2",
+        "page": 2,
+        "snippet": "Contract Employees must give fifteen (15) days' written"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "15"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q36",
+    "category": "near_duplicate",
+    "question": "How many unused annual leave days are paid out when I leave the company?",
+    "expected_answer": "Up to 15 days, paid in the final settlement.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "6.6",
+        "page": 2,
+        "snippet": "Unused annual leave is paid out (encashed) in"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "15"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q37",
+    "category": "near_duplicate",
+    "question": "How far in advance must I request international travel?",
+    "expected_answer": "At least 15 working days before departure, with CEO approval.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "2.2",
+        "page": 1,
+        "snippet": "International travel requires the CEO's approval, and the"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "15"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q38",
+    "category": "amendment",
+    "question": "What is the daily allowance for domestic travel?",
+    "expected_answer": "PKR 4,500 per day from 1 September 2026 (previously PKR 3,500).",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "5.1",
+        "page": 1,
+        "snippet": "A daily allowance (per diem) for meals and"
+      },
+      {
+        "file": "amendment_2026_01.pdf",
+        "doc_id": "KA-AMD-2026-01",
+        "clause": "1.1",
+        "page": 1,
+        "snippet": "Clause 5.1: the domestic daily allowance is increased"
+      }
+    ],
+    "source_match": "all",
+    "must_include": [
+      "4,500"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q39",
+    "category": "amendment",
+    "question": "What is the mileage rate for using my own car?",
+    "expected_answer": "PKR 55 per kilometre from 1 September 2026 (previously PKR 45).",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "6.1",
+        "page": 1,
+        "snippet": "Employees who use their own vehicle for business"
+      },
+      {
+        "file": "amendment_2026_01.pdf",
+        "doc_id": "KA-AMD-2026-01",
+        "clause": "1.2",
+        "page": 1,
+        "snippet": "Clause 6.1: the mileage rate for cars is"
+      }
+    ],
+    "source_match": "all",
+    "must_include": [
+      "55"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q40",
+    "category": "amendment",
+    "question": "How many days per week can I work from home?",
+    "expected_answer": "Up to 2 days after probation with Line Manager approval; from 1 September 2026, up to 3 days for employees rated Exceeds Expectations or higher.",
+    "expected_sources": [
+      {
+        "file": "employment_policy.pdf",
+        "doc_id": "KA-POL-01",
+        "clause": "4.3",
+        "page": 2,
+        "snippet": "Employees who have completed probation may work remotely"
+      },
+      {
+        "file": "amendment_2026_01.pdf",
+        "doc_id": "KA-AMD-2026-01",
+        "clause": "2.1",
+        "page": 1,
+        "snippet": "Clause 4.3: employees whose most recent performance rating"
+      }
+    ],
+    "source_match": "all",
+    "must_include": [
+      "2",
+      "3"
+    ],
+    "must_not_include": [],
+    "should_refuse": false
+  },
+  {
+    "id": "q41",
+    "category": "amendment",
+    "question": "What is the daily allowance for international travel?",
+    "expected_answer": "USD 50 per day. The amendment did not change it.",
+    "expected_sources": [
+      {
+        "file": "travel_expense_policy.pdf",
+        "doc_id": "KA-POL-05",
+        "clause": "5.1",
+        "page": 1,
+        "snippet": "A daily allowance (per diem) for meals and"
+      }
+    ],
+    "source_match": "any",
+    "must_include": [
+      "50"
+    ],
+    "must_not_include": [
+      "4,500"
+    ],
+    "should_refuse": false
+  },
+  {
+    "id": "q42",
+    "category": "out_of_scope",
+    "question": "What is the monthly stipend for interns?",
+    "expected_answer": "Not covered. Intern terms are in the Internship Guidelines (KA-POL-07), which are not in the document set.",
+    "expected_sources": [],
+    "source_match": "none",
+    "must_include": [],
+    "must_not_include": [],
+    "should_refuse": true
+  },
+  {
+    "id": "q43",
+    "category": "out_of_scope",
+    "question": "What is the company's health insurance coverage limit?",
+    "expected_answer": "Not covered in the documents.",
+    "expected_sources": [],
+    "source_match": "none",
+    "must_include": [],
+    "must_not_include": [],
+    "should_refuse": true
+  },
+  {
+    "id": "q44",
+    "category": "out_of_scope",
+    "question": "Who is the CEO of Kestrel Analytics?",
+    "expected_answer": "Not covered. The CEO is mentioned as a role but never named.",
+    "expected_sources": [],
+    "source_match": "none",
+    "must_include": [],
+    "must_not_include": [],
+    "should_refuse": true
+  }
+]

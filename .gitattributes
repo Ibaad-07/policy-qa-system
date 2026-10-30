@@ -1,0 +1,3 @@
+# Normalise text line endings, but never touch binary files.
+* text=auto
+*.pdf binary

@@ -1,0 +1,2385 @@
+{
+  "args": {
+    "config": "hybrid+rerank",
+    "chunking": null,
+    "category": null,
+    "limit": null
+  },
+  "configs": {
+    "recursive/hybrid+rerank": {
+      "chunking": "recursive",
+      "mode": "hybrid",
+      "rerank": true,
+      "hyde": false,
+      "multiquery": false,
+      "top_k": 5,
+      "doc_id": null
+    },
+    "clause/hybrid+rerank": {
+      "chunking": "clause",
+      "mode": "hybrid",
+      "rerank": true,
+      "hyde": false,
+      "multiquery": false,
+      "top_k": 5,
+      "doc_id": null
+    }
+  },
+  "best_config": "clause/hybrid+rerank",
+  "summaries": {
+    "recursive/hybrid+rerank": {
+      "hit@1": 0.8888888888888888,
+      "hit@3": 0.9444444444444444,
+      "hit@5": 0.9722222222222222,
+      "mrr": 0.925925925925926,
+      "recall@5": 1.0,
+      "n_any": 36,
+      "n_all": 5,
+      "category_hit@5": {
+        "exact_id": 0.8571428571428571,
+        "paraphrase": 1.0,
+        "detail": 1.0,
+        "exception": 1.0,
+        "cross_reference": 1.0,
+        "near_duplicate": 1.0,
+        "amendment": 1.0
+      },
+      "avg_ms": {
+        "bm25": 2.263509102208032,
+        "dense": 53.52758408778093,
+        "rrf": 0.06794091578657654,
+        "rerank": 4384.110922726739
+      }
+    },
+    "clause/hybrid+rerank": {
+      "hit@1": 0.9444444444444444,
+      "hit@3": 0.9722222222222222,
+      "hit@5": 0.9722222222222222,
+      "mrr": 0.9558404558404558,
+      "recall@5": 1.0,
+      "n_any": 36,
+      "n_all": 5,
+      "category_hit@5": {
+        "exact_id": 0.8571428571428571,
+        "paraphrase": 1.0,
+        "detail": 1.0,
+        "exception": 1.0,
+        "cross_reference": 1.0,
+        "near_duplicate": 1.0,
+        "amendment": 1.0
+      },
+      "avg_ms": {
+        "bm25": 0.42089090460318734,
+        "dense": 128.12914546388623,
+        "rrf": 0.06845000263472849,
+        "rerank": 1985.1669863723641
+      }
+    }
+  },
+  "results": {
+    "recursive/hybrid+rerank": [
+      {
+        "id": "q01",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p1::3",
+          "KA-POL-01::recursive::p2::1",
+          "KA-POL-04::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-03::recursive::p1::1"
+        ],
+        "top_score": 0.6387662291526794,
+        "top_dense": 0.5979403104689516,
+        "top_rerank": 0.6387662291526794,
+        "timings": {
+          "bm25": 0.08526600000914186,
+          "dense": 0.7265275999670848,
+          "rrf": 6.010010838508606e-05,
+          "rerank": 4.553456100053154
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q02",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::1",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-03::recursive::p1::1",
+          "KA-POL-04::recursive::p1::3"
+        ],
+        "top_score": 0.27425462007522583,
+        "top_dense": 0.7109019336241429,
+        "top_rerank": 0.27425462007522583,
+        "timings": {
+          "bm25": 0.00012179999612271786,
+          "dense": 0.023591900011524558,
+          "rrf": 4.39999857917428e-05,
+          "rerank": 4.140638200100511
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q03",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::4",
+          "KA-POL-04::recursive::p1::2",
+          "KA-POL-05::recursive::p2::2",
+          "KA-POL-03::recursive::p1::5",
+          "KA-AMD-2026-01::recursive::p1::1"
+        ],
+        "top_score": 0.8870421648025513,
+        "top_dense": 0.6684693771068071,
+        "top_rerank": 0.8870421648025513,
+        "timings": {
+          "bm25": 0.00037489994429051876,
+          "dense": 0.04289969999808818,
+          "rrf": 3.5899924114346504e-05,
+          "rerank": 4.534525100025348
+        },
+        "rank": 4,
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": true,
+        "rr": 0.25,
+        "success@5": true
+      },
+      {
+        "id": "q04",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-04::recursive::p2::2",
+          "KA-POL-04::recursive::p2::1",
+          "KA-POL-04::recursive::p1::2",
+          "KA-POL-03::recursive::p1::3"
+        ],
+        "top_score": 0.014610163867473602,
+        "top_dense": 0.5585868603767954,
+        "top_rerank": 0.014610163867473602,
+        "timings": {
+          "bm25": 0.00018169998656958342,
+          "dense": 0.03233469999395311,
+          "rrf": 5.879998207092285e-05,
+          "rerank": 4.049568000016734
+        },
+        "rank": 12,
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "rr": 0.08333333333333333,
+        "success@5": false
+      },
+      {
+        "id": "q05",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::4",
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-01::recursive::p2::1",
+          "KA-POL-03::recursive::p1::1",
+          "KA-POL-04::recursive::p1::4"
+        ],
+        "top_score": 0.9489941596984863,
+        "top_dense": 0.5899434032022017,
+        "top_rerank": 0.9489941596984863,
+        "timings": {
+          "bm25": 0.00022410007659345865,
+          "dense": 0.0284821999957785,
+          "rrf": 4.239997360855341e-05,
+          "rerank": 4.122577300062403
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q06",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::recursive::p1::1",
+          "KA-POL-03::recursive::p1::2",
+          "KA-POL-04::recursive::p1::3",
+          "KA-POL-04::recursive::p1::4",
+          "KA-POL-05::recursive::p1::1"
+        ],
+        "top_score": 0.9020956158638,
+        "top_dense": 0.6105826823860745,
+        "top_rerank": 0.9020956158638,
+        "timings": {
+          "bm25": 0.0002728999825194478,
+          "dense": 0.04524130001664162,
+          "rrf": 9.26000066101551e-05,
+          "rerank": 4.3589780000038445
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q07",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::3",
+          "KA-POL-04::recursive::p1::4",
+          "KA-POL-03::recursive::p1::2",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-01::recursive::p2::1"
+        ],
+        "top_score": 0.6553201675415039,
+        "top_dense": 0.6494006823743315,
+        "top_rerank": 0.6553201675415039,
+        "timings": {
+          "bm25": 0.0004094999749213457,
+          "dense": 0.03197010001167655,
+          "rrf": 8.349993731826544e-05,
+          "rerank": 4.456089399987832
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q08",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::2",
+          "KA-POL-04::recursive::p2::2",
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-04::recursive::p2::1",
+          "KA-POL-04::recursive::p1::1"
+        ],
+        "top_score": 0.1086287871003151,
+        "top_dense": 0.6639022554127572,
+        "top_rerank": 0.1086287871003151,
+        "timings": {
+          "bm25": 0.00021029997151345015,
+          "dense": 0.03297340008430183,
+          "rrf": 3.5100034438073635e-05,
+          "rerank": 4.180875799967907
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q09",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p2::1",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p2::3",
+          "KA-POL-02::recursive::p1::4"
+        ],
+        "top_score": 0.42420893907546997,
+        "top_dense": 0.6924948846445843,
+        "top_rerank": 0.42420893907546997,
+        "timings": {
+          "bm25": 0.0003926000790670514,
+          "dense": 0.03385769994929433,
+          "rrf": 3.50000336766243e-05,
+          "rerank": 4.034092199988663
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q10",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::4",
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p1::1",
+          "KA-POL-04::recursive::p1::3",
+          "KA-POL-04::recursive::p2::2"
+        ],
+        "top_score": 0.002091140951961279,
+        "top_dense": 0.6009464092379025,
+        "top_rerank": 0.002091140951961279,
+        "timings": {
+          "bm25": 0.00020520004909485579,
+          "dense": 0.03908469993621111,
+          "rrf": 7.129996083676815e-05,
+          "rerank": 4.370984999928623
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q11",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-01::recursive::p2::2",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-03::recursive::p1::4",
+          "KA-POL-01::recursive::p2::4"
+        ],
+        "top_score": 0.06285975873470306,
+        "top_dense": 0.6646367548488201,
+        "top_rerank": 0.06285975873470306,
+        "timings": {
+          "bm25": 0.0004997000796720386,
+          "dense": 0.034022800042293966,
+          "rrf": 8.679996244609356e-05,
+          "rerank": 4.1127610999392346
+        },
+        "rank": 2,
+        "hit@1": false,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 0.5,
+        "success@5": true
+      },
+      {
+        "id": "q12",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p2::1",
+          "KA-POL-02::recursive::p2::3",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-02::recursive::p1::3"
+        ],
+        "top_score": 0.2782933712005615,
+        "top_dense": 0.6081045101177113,
+        "top_rerank": 0.2782933712005615,
+        "timings": {
+          "bm25": 0.0007618999807164073,
+          "dense": 0.04633749998174608,
+          "rrf": 9.460002183914185e-05,
+          "rerank": 4.373304400010966
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q13",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::recursive::p1::4",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-01::recursive::p2::3",
+          "KA-AMD-2026-01::recursive::p1::2"
+        ],
+        "top_score": 0.19431541860103607,
+        "top_dense": 0.6148745042669885,
+        "top_rerank": 0.19431541860103607,
+        "timings": {
+          "bm25": 0.00022140005603432655,
+          "dense": 0.02776670001912862,
+          "rrf": 4.549999721348286e-05,
+          "rerank": 3.996013000025414
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q14",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::3",
+          "KA-POL-04::recursive::p2::1",
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-04::recursive::p2::2",
+          "KA-POL-04::recursive::p2::3"
+        ],
+        "top_score": 0.7728869915008545,
+        "top_dense": 0.7322890190654361,
+        "top_rerank": 0.7728869915008545,
+        "timings": {
+          "bm25": 0.0003182000946253538,
+          "dense": 0.041048399987630546,
+          "rrf": 8.380005601793528e-05,
+          "rerank": 4.2699575000442564
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q15",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p2::2",
+          "KA-POL-04::recursive::p1::3",
+          "KA-POL-04::recursive::p1::1",
+          "KA-POL-01::recursive::p2::1",
+          "KA-POL-03::recursive::p1::3"
+        ],
+        "top_score": 0.026655029505491257,
+        "top_dense": 0.5112153707222457,
+        "top_rerank": 0.026655029505491257,
+        "timings": {
+          "bm25": 0.0003587000537663698,
+          "dense": 0.04625090002082288,
+          "rrf": 9.180000051856041e-05,
+          "rerank": 4.34119130007457
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q16",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-03::recursive::p1::2"
+        ],
+        "top_score": 0.9486564993858337,
+        "top_dense": 0.7482168777760612,
+        "top_rerank": 0.9486564993858337,
+        "timings": {
+          "bm25": 0.00023740006145089865,
+          "dense": 0.03469339990988374,
+          "rrf": 4.439998883754015e-05,
+          "rerank": 4.280913399998099
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q17",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-02::recursive::p2::1",
+          "KA-POL-02::recursive::p2::2",
+          "KA-POL-02::recursive::p1::1"
+        ],
+        "top_score": 0.9905287623405457,
+        "top_dense": 0.7730953621228195,
+        "top_rerank": 0.9905287623405457,
+        "timings": {
+          "bm25": 0.0004211000632494688,
+          "dense": 0.03535809996537864,
+          "rrf": 8.449994493275881e-05,
+          "rerank": 4.113678099936806
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q18",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::1",
+          "KA-POL-04::recursive::p1::4",
+          "KA-POL-04::recursive::p1::2",
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-04::recursive::p2::1"
+        ],
+        "top_score": 0.1252824068069458,
+        "top_dense": 0.6227381312779581,
+        "top_rerank": 0.1252824068069458,
+        "timings": {
+          "bm25": 0.00023110001347959042,
+          "dense": 0.03839570004492998,
+          "rrf": 5.5600074119865894e-05,
+          "rerank": 3.832039599888958
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q19",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::recursive::p1::2",
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-04::recursive::p2::2",
+          "KA-POL-04::recursive::p2::1",
+          "KA-POL-04::recursive::p1::1"
+        ],
+        "top_score": 0.9960839748382568,
+        "top_dense": 0.6466237886348133,
+        "top_rerank": 0.9960839748382568,
+        "timings": {
+          "bm25": 0.00037610006984323263,
+          "dense": 0.03931040002498776,
+          "rrf": 3.700004890561104e-05,
+          "rerank": 4.085377200040966
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q20",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::recursive::p2::1",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-03::recursive::p1::3",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-04::recursive::p1::3"
+        ],
+        "top_score": 0.9955527186393738,
+        "top_dense": 0.7990661237831855,
+        "top_rerank": 0.9955527186393738,
+        "timings": {
+          "bm25": 0.0002012000186368823,
+          "dense": 0.03097159997560084,
+          "rrf": 4.349998198449612e-05,
+          "rerank": 4.086956099956296
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q21",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::1",
+          "KA-POL-05::recursive::p1::3",
+          "KA-POL-02::recursive::p2::3"
+        ],
+        "top_score": 0.4221682846546173,
+        "top_dense": 0.6309369648684151,
+        "top_rerank": 0.4221682846546173,
+        "timings": {
+          "bm25": 0.0003823000006377697,
+          "dense": 0.044088999973610044,
+          "rrf": 7.339997682720423e-05,
+          "rerank": 4.301379399956204
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q22",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p2::1",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p1::1"
+        ],
+        "top_score": 0.9703686237335205,
+        "top_dense": 0.8101438231171169,
+        "top_rerank": 0.9703686237335205,
+        "timings": {
+          "bm25": 0.00018149998504668474,
+          "dense": 0.028266299981623888,
+          "rrf": 6.740004755556583e-05,
+          "rerank": 4.126468799891882
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q23",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-02::recursive::p1::1"
+        ],
+        "top_score": 0.9875160455703735,
+        "top_dense": 0.7762206393610392,
+        "top_rerank": 0.9875160455703735,
+        "timings": {
+          "bm25": 0.00044219999108463526,
+          "dense": 0.04137350001838058,
+          "rrf": 7.269997149705887e-05,
+          "rerank": 4.309513599961065
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q24",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-02::recursive::p1::1",
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-01::recursive::p2::1",
+          "KA-POL-01::recursive::p1::3"
+        ],
+        "top_score": 0.9971447587013245,
+        "top_dense": 0.798180070193512,
+        "top_rerank": 0.9971447587013245,
+        "timings": {
+          "bm25": 0.00033660000190138817,
+          "dense": 0.033221299992874265,
+          "rrf": 0.00010499998461455107,
+          "rerank": 4.107725900015794
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q25",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p1::1",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1"
+        ],
+        "top_score": 0.8961241841316223,
+        "top_dense": 0.6978421348858252,
+        "top_rerank": 0.8961241841316223,
+        "timings": {
+          "bm25": 0.0003597999457269907,
+          "dense": 0.04238090000580996,
+          "rrf": 3.909994848072529e-05,
+          "rerank": 4.346478600054979
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q26",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::3",
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p1::1",
+          "KA-AMD-2026-01::recursive::p1::1"
+        ],
+        "top_score": 0.1384139358997345,
+        "top_dense": 0.6510518872199591,
+        "top_rerank": 0.1384139358997345,
+        "timings": {
+          "bm25": 0.0002639000304043293,
+          "dense": 0.03454340004827827,
+          "rrf": 8.829997386783361e-05,
+          "rerank": 4.457877799984999
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q27",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-02::recursive::p2::1"
+        ],
+        "top_score": 0.9797882437705994,
+        "top_dense": 0.7684618048639608,
+        "top_rerank": 0.9797882437705994,
+        "timings": {
+          "bm25": 0.0002172000240534544,
+          "dense": 0.03320770000573248,
+          "rrf": 6.880005821585655e-05,
+          "rerank": 4.1233734000707045
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q28",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-02::recursive::p1::1",
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::3"
+        ],
+        "top_score": 0.9956791996955872,
+        "top_dense": 0.7536413298990992,
+        "top_rerank": 0.9956791996955872,
+        "timings": {
+          "bm25": 0.00021540001034736633,
+          "dense": 0.04014890000689775,
+          "rrf": 4.309997893869877e-05,
+          "rerank": 4.130176499951631
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q29",
+        "category": "cross_reference",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p2::2",
+          "KA-POL-03::recursive::p1::5",
+          "KA-POL-03::recursive::p2::1"
+        ],
+        "top_score": 0.9280430674552917,
+        "top_dense": 0.6968011900276521,
+        "top_rerank": 0.9280430674552917,
+        "timings": {
+          "bm25": 0.0004273999948054552,
+          "dense": 0.04155480000190437,
+          "rrf": 8.230004459619522e-05,
+          "rerank": 5.670454300008714
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q30",
+        "category": "cross_reference",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::4",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-03::recursive::p2::1",
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-05::recursive::p2::2"
+        ],
+        "top_score": 0.9348379969596863,
+        "top_dense": 0.7643121261897337,
+        "top_rerank": 0.9348379969596863,
+        "timings": {
+          "bm25": 0.0005720000481233001,
+          "dense": 0.04547200002707541,
+          "rrf": 8.289993274956942e-05,
+          "rerank": 4.590866399928927
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q31",
+        "category": "cross_reference",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-03::recursive::p1::1",
+          "KA-POL-03::recursive::p2::3",
+          "KA-POL-03::recursive::p1::2",
+          "KA-POL-03::recursive::p2::1"
+        ],
+        "top_score": 0.9977713823318481,
+        "top_dense": 0.7259845623741745,
+        "top_rerank": 0.9977713823318481,
+        "timings": {
+          "bm25": 0.0004851999692618847,
+          "dense": 0.04313090001232922,
+          "rrf": 5.070003680884838e-05,
+          "rerank": 5.48062199994456
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q32",
+        "category": "cross_reference",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-02::recursive::p2::3",
+          "KA-POL-01::recursive::p2::2",
+          "KA-POL-02::recursive::p2::2",
+          "KA-POL-01::recursive::p1::2",
+          "KA-POL-02::recursive::p1::3"
+        ],
+        "top_score": 0.7228006720542908,
+        "top_dense": 0.7599650018678922,
+        "top_rerank": 0.7228006720542908,
+        "timings": {
+          "bm25": 0.0005031999899074435,
+          "dense": 0.03747009998187423,
+          "rrf": 7.269997149705887e-05,
+          "rerank": 4.74748969997745
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q33",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-01::recursive::p1::3",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-02::recursive::p1::1"
+        ],
+        "top_score": 0.9963149428367615,
+        "top_dense": 0.7710387926070277,
+        "top_rerank": 0.9963149428367615,
+        "timings": {
+          "bm25": 0.0003358999965712428,
+          "dense": 0.0370581999886781,
+          "rrf": 5.909998435527086e-05,
+          "rerank": 5.0807311000535265
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q34",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-01::recursive::p1::3",
+          "KA-POL-01::recursive::p1::2",
+          "KA-POL-03::recursive::p2::1",
+          "KA-POL-01::recursive::p2::1"
+        ],
+        "top_score": 0.9011610150337219,
+        "top_dense": 0.7546169857321829,
+        "top_rerank": 0.9011610150337219,
+        "timings": {
+          "bm25": 0.00019409996457397938,
+          "dense": 0.048935099970549345,
+          "rrf": 9.009998757392168e-05,
+          "rerank": 4.976891800062731
+        },
+        "rank": 2,
+        "hit@1": false,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 0.5,
+        "success@5": true
+      },
+      {
+        "id": "q35",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::3",
+          "KA-POL-01::recursive::p1::3",
+          "KA-POL-02::recursive::p1::1",
+          "KA-POL-03::recursive::p2::1",
+          "KA-POL-03::recursive::p2::2"
+        ],
+        "top_score": 0.8711600303649902,
+        "top_dense": 0.7508628791257446,
+        "top_rerank": 0.8711600303649902,
+        "timings": {
+          "bm25": 0.00019590009469538927,
+          "dense": 0.03179209993686527,
+          "rrf": 0.00011969998013228178,
+          "rerank": 4.629334900062531
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q36",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p2::2",
+          "KA-POL-02::recursive::p1::4",
+          "KA-POL-02::recursive::p1::1"
+        ],
+        "top_score": 0.994074285030365,
+        "top_dense": 0.8084256959562749,
+        "top_rerank": 0.994074285030365,
+        "timings": {
+          "bm25": 0.0007272999500855803,
+          "dense": 0.04385090002324432,
+          "rrf": 5.5900076404213905e-05,
+          "rerank": 4.685750399949029
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q37",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::1",
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-02::recursive::p1::2",
+          "KA-POL-05::recursive::p1::3",
+          "KA-POL-05::recursive::p2::1"
+        ],
+        "top_score": 0.9319340586662292,
+        "top_dense": 0.7647708786940538,
+        "top_rerank": 0.9319340586662292,
+        "timings": {
+          "bm25": 0.0002394999610260129,
+          "dense": 0.043220599996857345,
+          "rrf": 9.220000356435776e-05,
+          "rerank": 4.548000100068748
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q38",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-05::recursive::p1::1",
+          "KA-POL-02::recursive::p1::4"
+        ],
+        "top_score": 0.9978259205818176,
+        "top_dense": 0.8307276506611236,
+        "top_rerank": 0.9978259205818176,
+        "timings": {
+          "bm25": 0.00030620000325143337,
+          "dense": 0.03541349992156029,
+          "rrf": 6.850005593150854e-05,
+          "rerank": 4.561356000020169
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q39",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-05::recursive::p1::2",
+          "KA-POL-01::recursive::p2::2"
+        ],
+        "top_score": 0.7857985496520996,
+        "top_dense": 0.579588913735374,
+        "top_rerank": 0.7857985496520996,
+        "timings": {
+          "bm25": 0.00039469997864216566,
+          "dense": 0.04210239998064935,
+          "rrf": 9.039998985826969e-05,
+          "rerank": 4.689884899999015
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q40",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-AMD-2026-01::recursive::p1::2",
+          "KA-POL-01::recursive::p2::1",
+          "KA-POL-02::recursive::p1::3",
+          "KA-POL-02::recursive::p2::1",
+          "KA-POL-02::recursive::p1::4"
+        ],
+        "top_score": 0.8474318385124207,
+        "top_dense": 0.7139737696512833,
+        "top_rerank": 0.8474318385124207,
+        "timings": {
+          "bm25": 0.0003256000345572829,
+          "dense": 0.037562299985438585,
+          "rrf": 8.910009637475014e-05,
+          "rerank": 4.522104999981821
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q41",
+        "category": "amendment",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::recursive::p1::3",
+          "KA-POL-05::recursive::p1::2",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-05::recursive::p2::1",
+          "KA-POL-02::recursive::p1::4"
+        ],
+        "top_score": 0.9973607659339905,
+        "top_dense": 0.8156618249060086,
+        "top_rerank": 0.9973607659339905,
+        "timings": {
+          "bm25": 0.0002984999446198344,
+          "dense": 0.03388110001105815,
+          "rrf": 3.4800032153725624e-05,
+          "rerank": 4.794525699922815
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q42",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-POL-01::recursive::p2::5",
+          "KA-POL-02::recursive::p1::3",
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-POL-04::recursive::p1::1",
+          "KA-POL-05::recursive::p2::1"
+        ],
+        "top_score": 0.01927928254008293,
+        "top_dense": 0.5986612767734247,
+        "top_rerank": 0.01927928254008293,
+        "timings": {
+          "bm25": 0.00018179998733103275,
+          "dense": 0.039305999991483986,
+          "rrf": 6.2700011767447e-05,
+          "rerank": 4.319781200028956
+        }
+      },
+      {
+        "id": "q43",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-AMD-2026-01::recursive::p1::1",
+          "KA-AMD-2026-01::recursive::p1::2",
+          "KA-POL-05::recursive::p1::3",
+          "KA-POL-03::recursive::p1::2",
+          "KA-POL-02::recursive::p1::4"
+        ],
+        "top_score": 0.041368886828422546,
+        "top_dense": 0.6092750651648953,
+        "top_rerank": 0.041368886828422546,
+        "timings": {
+          "bm25": 0.00043540005572140217,
+          "dense": 0.04160990007221699,
+          "rrf": 5.9600104577839375e-05,
+          "rerank": 4.303063399973325
+        }
+      },
+      {
+        "id": "q44",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-POL-01::recursive::p1::1",
+          "KA-POL-03::recursive::p2::2",
+          "KA-POL-01::recursive::p2::4",
+          "KA-POL-04::recursive::p2::1",
+          "KA-POL-03::recursive::p1::5"
+        ],
+        "top_score": 0.01670243963599205,
+        "top_dense": 0.6115206549447216,
+        "top_rerank": 0.01670243963599205,
+        "timings": {
+          "bm25": 0.0002869999734684825,
+          "dense": 0.0445039999904111,
+          "rrf": 9.470002260059118e-05,
+          "rerank": 3.1030529000563547
+        }
+      }
+    ],
+    "clause/hybrid+rerank": [
+      {
+        "id": "q01",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::3.2",
+          "KA-POL-01::clause::4.3",
+          "KA-POL-01::clause::5.3",
+          "KA-POL-04::clause::3.3",
+          "KA-POL-05::clause::1.1"
+        ],
+        "top_score": 0.3751157820224762,
+        "top_dense": 0.6296735793302857,
+        "top_rerank": 0.3751157820224762,
+        "timings": {
+          "bm25": 0.0004240999696776271,
+          "dense": 4.579672600026242,
+          "rrf": 4.169996827840805e-05,
+          "rerank": 2.2523368999827653
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q02",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::7.1",
+          "KA-POL-05::clause::2.1",
+          "KA-POL-03::clause::2.1",
+          "KA-POL-04::clause::4.2",
+          "KA-POL-03::clause::2.2"
+        ],
+        "top_score": 0.37618157267570496,
+        "top_dense": 0.6629141107386143,
+        "top_rerank": 0.37618157267570496,
+        "timings": {
+          "bm25": 0.0002416000934317708,
+          "dense": 0.024499099934473634,
+          "rrf": 7.71000050008297e-05,
+          "rerank": 2.0828126000706106
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q03",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.4",
+          "KA-POL-04::clause::3.2",
+          "KA-POL-03::clause::5.2",
+          "KA-POL-04::clause::5.2",
+          "KA-POL-05::clause::9.1"
+        ],
+        "top_score": 0.9621926546096802,
+        "top_dense": 0.6934425852968419,
+        "top_rerank": 0.9621926546096802,
+        "timings": {
+          "bm25": 0.00036559998989105225,
+          "dense": 0.02364049991592765,
+          "rrf": 5.350005812942982e-05,
+          "rerank": 2.238380499999039
+        },
+        "rank": 3,
+        "hit@1": false,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 0.3333333333333333,
+        "success@5": true
+      },
+      {
+        "id": "q04",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::6.1",
+          "KA-POL-04::clause::5.2",
+          "KA-POL-04::clause::2.1",
+          "KA-POL-04::clause::3.3",
+          "KA-POL-04::clause::6.2"
+        ],
+        "top_score": 0.010629022493958473,
+        "top_dense": 0.5376178955678548,
+        "top_rerank": 0.010629022493958473,
+        "timings": {
+          "bm25": 0.00030319998040795326,
+          "dense": 0.022153300000354648,
+          "rrf": 6.919994484633207e-05,
+          "rerank": 1.746607800014317
+        },
+        "rank": 13,
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "rr": 0.07692307692307693,
+        "success@5": false
+      },
+      {
+        "id": "q05",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.5",
+          "KA-POL-01::clause::5.3",
+          "KA-POL-03::clause::2.2",
+          "KA-POL-01::clause::4.3",
+          "KA-POL-01::clause::2.1"
+        ],
+        "top_score": 0.9603157639503479,
+        "top_dense": 0.6459113605902727,
+        "top_rerank": 0.9603157639503479,
+        "timings": {
+          "bm25": 0.00022960000205785036,
+          "dense": 0.022002400015480816,
+          "rrf": 4.6600005589425564e-05,
+          "rerank": 2.141564700054005
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q06",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::clause::2.1",
+          "KA-POL-03::clause::2.3",
+          "KA-POL-04::clause::4.2",
+          "KA-POL-04::clause::4.3",
+          "KA-POL-04::clause::2.1"
+        ],
+        "top_score": 0.8764976263046265,
+        "top_dense": 0.6192566741154926,
+        "top_rerank": 0.8764976263046265,
+        "timings": {
+          "bm25": 0.0002810000441968441,
+          "dense": 0.024386700009927154,
+          "rrf": 7.910002022981644e-05,
+          "rerank": 1.9750194000080228
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q07",
+        "category": "exact_id",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::4.2",
+          "KA-POL-04::clause::4.3",
+          "KA-POL-05::clause::2.1",
+          "KA-POL-01::clause::3.2",
+          "KA-POL-03::clause::2.3"
+        ],
+        "top_score": 0.8583403825759888,
+        "top_dense": 0.6723267400493707,
+        "top_rerank": 0.8583403825759888,
+        "timings": {
+          "bm25": 0.00042260007467120886,
+          "dense": 0.02330120000988245,
+          "rrf": 7.810001261532307e-05,
+          "rerank": 2.0443549000192434
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q08",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::3.2",
+          "KA-POL-03::clause::5.2",
+          "KA-POL-04::clause::7.2",
+          "KA-POL-04::clause::4.1",
+          "KA-POL-04::clause::3.1"
+        ],
+        "top_score": 0.02988341636955738,
+        "top_dense": 0.6969759697745157,
+        "top_rerank": 0.02988341636955738,
+        "timings": {
+          "bm25": 0.000573999946936965,
+          "dense": 0.024514000047929585,
+          "rrf": 6.0699996538460255e-05,
+          "rerank": 2.378217300050892
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q09",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::6.2",
+          "KA-POL-02::clause::6.3",
+          "KA-POL-02::clause::7.1",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-02::clause::10.2"
+        ],
+        "top_score": 0.027828887104988098,
+        "top_dense": 0.7096771352914535,
+        "top_rerank": 0.027828887104988098,
+        "timings": {
+          "bm25": 0.0005173999816179276,
+          "dense": 0.024451700039207935,
+          "rrf": 3.3800024539232254e-05,
+          "rerank": 1.9920737000647932
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q10",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::4.3",
+          "KA-POL-05::clause::3.1",
+          "KA-POL-04::clause::2.1",
+          "KA-POL-04::clause::4.2",
+          "KA-POL-04::clause::3.4"
+        ],
+        "top_score": 0.0017449618317186832,
+        "top_dense": 0.6035081814990759,
+        "top_rerank": 0.0017449618317186832,
+        "timings": {
+          "bm25": 0.0003845999017357826,
+          "dense": 0.023469800013117492,
+          "rrf": 7.690000347793102e-05,
+          "rerank": 2.288979599950835
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q11",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::4.4",
+          "KA-POL-02::clause::10.2",
+          "KA-POL-01::clause::5.1",
+          "KA-POL-01::clause::6.5",
+          "KA-POL-02::clause::3.1"
+        ],
+        "top_score": 0.008213401772081852,
+        "top_dense": 0.6596961291907638,
+        "top_rerank": 0.008213401772081852,
+        "timings": {
+          "bm25": 0.0004732999950647354,
+          "dense": 0.023247700068168342,
+          "rrf": 5.2200048230588436e-05,
+          "rerank": 1.9304104000329971
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q12",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::7.1",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-02::clause::5.2",
+          "KA-POL-02::clause::3.2",
+          "KA-POL-02::clause::3.4"
+        ],
+        "top_score": 0.6046363711357117,
+        "top_dense": 0.6966596451559746,
+        "top_rerank": 0.6046363711357117,
+        "timings": {
+          "bm25": 0.0005614999681711197,
+          "dense": 0.027078200015239418,
+          "rrf": 8.070003241300583e-05,
+          "rerank": 1.9452926999656484
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q13",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::clause::5.1",
+          "KA-POL-01::clause::6.1",
+          "KA-POL-02::clause::3.4",
+          "KA-POL-01::clause::3.4",
+          "KA-POL-03::clause::6.6"
+        ],
+        "top_score": 0.11677704751491547,
+        "top_dense": 0.6116607721490256,
+        "top_rerank": 0.11677704751491547,
+        "timings": {
+          "bm25": 0.000372899929061532,
+          "dense": 0.023223700001835823,
+          "rrf": 6.620003841817379e-05,
+          "rerank": 1.909178200061433
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q14",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::4.1",
+          "KA-POL-04::clause::5.2",
+          "KA-POL-03::clause::3.1",
+          "KA-POL-04::clause::8.1",
+          "KA-POL-03::clause::5.2"
+        ],
+        "top_score": 0.8675337433815002,
+        "top_dense": 0.7485998858710212,
+        "top_rerank": 0.8675337433815002,
+        "timings": {
+          "bm25": 0.00032400002237409353,
+          "dense": 0.021254800027236342,
+          "rrf": 4.1899969801306725e-05,
+          "rerank": 2.2132525999331847
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q15",
+        "category": "paraphrase",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::6.2",
+          "KA-POL-04::clause::6.1",
+          "KA-POL-04::clause::2.1",
+          "KA-POL-04::clause::4.1",
+          "KA-POL-01::clause::4.2"
+        ],
+        "top_score": 0.016922375187277794,
+        "top_dense": 0.6425689058076958,
+        "top_rerank": 0.016922375187277794,
+        "timings": {
+          "bm25": 0.0003909000661224127,
+          "dense": 0.026097399997524917,
+          "rrf": 4.9900030717253685e-05,
+          "rerank": 1.9404290999518707
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q16",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::4.1",
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::8.1",
+          "KA-POL-05::clause::5.1",
+          "KA-AMD-2026-01::clause::1.1"
+        ],
+        "top_score": 0.9768749475479126,
+        "top_dense": 0.8660708719936407,
+        "top_rerank": 0.9768749475479126,
+        "timings": {
+          "bm25": 0.00038350000977516174,
+          "dense": 0.023993800044991076,
+          "rrf": 8.470006287097931e-05,
+          "rerank": 1.8958224999951199
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q17",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::4.1",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-02::clause::4.2",
+          "KA-POL-02::clause::9.1",
+          "KA-POL-02::clause::3.1"
+        ],
+        "top_score": 0.9972367286682129,
+        "top_dense": 0.834393698135862,
+        "top_rerank": 0.9972367286682129,
+        "timings": {
+          "bm25": 0.0004873999860137701,
+          "dense": 0.02363750000949949,
+          "rrf": 8.409994188696146e-05,
+          "rerank": 1.8868885000701994
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q18",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::3.1",
+          "KA-POL-04::clause::4.2",
+          "KA-POL-04::clause::4.3",
+          "KA-POL-04::clause::5.2",
+          "KA-POL-04::clause::3.4"
+        ],
+        "top_score": 0.5484455227851868,
+        "top_dense": 0.7245047940518439,
+        "top_rerank": 0.5484455227851868,
+        "timings": {
+          "bm25": 0.0002829000586643815,
+          "dense": 0.02236780000384897,
+          "rrf": 6.690004374831915e-05,
+          "rerank": 1.8397230999544263
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q19",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-04::clause::3.4",
+          "KA-POL-04::clause::3.1",
+          "KA-POL-04::clause::3.2",
+          "KA-POL-04::clause::7.1",
+          "KA-POL-04::clause::3.3"
+        ],
+        "top_score": 0.9997643828392029,
+        "top_dense": 0.7954751438615714,
+        "top_rerank": 0.9997643828392029,
+        "timings": {
+          "bm25": 0.0003800999838858843,
+          "dense": 0.024684199946932495,
+          "rrf": 6.340001709759235e-05,
+          "rerank": 2.2238688999786973
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q20",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::clause::6.2",
+          "KA-POL-03::clause::6.3",
+          "KA-POL-03::clause::6.6",
+          "KA-POL-03::clause::6.1",
+          "KA-POL-03::clause::6.4"
+        ],
+        "top_score": 0.9945539236068726,
+        "top_dense": 0.7696027338043929,
+        "top_rerank": 0.9945539236068726,
+        "timings": {
+          "bm25": 0.0006325000431388617,
+          "dense": 0.03410199994686991,
+          "rrf": 7.419998291879892e-05,
+          "rerank": 1.8336800000397488
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q21",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::4.1",
+          "KA-POL-05::clause::8.1",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-05::clause::3.1"
+        ],
+        "top_score": 0.06242809444665909,
+        "top_dense": 0.7081973601300928,
+        "top_rerank": 0.06242809444665909,
+        "timings": {
+          "bm25": 0.00037489994429051876,
+          "dense": 0.023633799981325865,
+          "rrf": 9.190000128000975e-05,
+          "rerank": 1.9696371000027284
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q22",
+        "category": "detail",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::6.1",
+          "KA-POL-02::clause::6.2",
+          "KA-POL-02::clause::6.3",
+          "KA-POL-02::clause::2.1",
+          "KA-POL-01::clause::6.6"
+        ],
+        "top_score": 0.9860782623291016,
+        "top_dense": 0.8449897386518962,
+        "top_rerank": 0.9860782623291016,
+        "timings": {
+          "bm25": 0.0002750999992713332,
+          "dense": 0.02201070007868111,
+          "rrf": 0.0001050999853760004,
+          "rerank": 1.7187234000302851
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q23",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::3.4",
+          "KA-POL-02::clause::4.3",
+          "KA-POL-01::clause::6.6",
+          "KA-POL-02::clause::3.2",
+          "KA-POL-02::clause::5.2"
+        ],
+        "top_score": 0.9982408285140991,
+        "top_dense": 0.8264112402471945,
+        "top_rerank": 0.9982408285140991,
+        "timings": {
+          "bm25": 0.00037919997703284025,
+          "dense": 0.023893299978226423,
+          "rrf": 9.049999061971903e-05,
+          "rerank": 1.760917600011453
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q24",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::3.2",
+          "KA-POL-02::clause::3.1",
+          "KA-POL-01::clause::6.1",
+          "KA-POL-01::clause::3.4",
+          "KA-POL-01::clause::4.3"
+        ],
+        "top_score": 0.9994105100631714,
+        "top_dense": 0.7940668536424761,
+        "top_rerank": 0.9994105100631714,
+        "timings": {
+          "bm25": 0.0008388999849557877,
+          "dense": 0.028624000027775764,
+          "rrf": 8.720008190721273e-05,
+          "rerank": 1.7281517999945208
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q25",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::3.1",
+          "KA-POL-05::clause::2.2",
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::2.1",
+          "KA-POL-05::clause::5.1"
+        ],
+        "top_score": 0.7729019522666931,
+        "top_dense": 0.763507399710677,
+        "top_rerank": 0.7729019522666931,
+        "timings": {
+          "bm25": 0.0003266999265179038,
+          "dense": 0.021635400014929473,
+          "rrf": 7.019995246082544e-05,
+          "rerank": 1.9648813999956474
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q26",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::8.1",
+          "KA-POL-05::clause::1.1",
+          "KA-POL-05::clause::6.1",
+          "KA-POL-05::clause::2.1",
+          "KA-POL-05::clause::7.2"
+        ],
+        "top_score": 0.08763442188501358,
+        "top_dense": 0.7246397273133569,
+        "top_rerank": 0.08763442188501358,
+        "timings": {
+          "bm25": 0.0003837000112980604,
+          "dense": 0.02766000002156943,
+          "rrf": 8.960010018199682e-05,
+          "rerank": 1.8305665000807494
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q27",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::4.3",
+          "KA-POL-01::clause::6.6",
+          "KA-POL-02::clause::4.1",
+          "KA-POL-02::clause::3.4",
+          "KA-POL-02::clause::5.2"
+        ],
+        "top_score": 0.9505985379219055,
+        "top_dense": 0.760216246030669,
+        "top_rerank": 0.9505985379219055,
+        "timings": {
+          "bm25": 0.0003576999297365546,
+          "dense": 0.021884400048293173,
+          "rrf": 5.249993409961462e-05,
+          "rerank": 1.7983559999847785
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q28",
+        "category": "exception",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-02::clause::5.2",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-02::clause::2.2",
+          "KA-POL-01::clause::6.6",
+          "KA-POL-02::clause::3.2"
+        ],
+        "top_score": 0.9991820454597473,
+        "top_dense": 0.803640397724458,
+        "top_rerank": 0.9991820454597473,
+        "timings": {
+          "bm25": 0.0003241999074816704,
+          "dense": 0.022684200084768236,
+          "rrf": 7.970002479851246e-05,
+          "rerank": 1.6744202999398112
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q29",
+        "category": "cross_reference",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-03::clause::6.6",
+          "KA-POL-05::clause::9.1",
+          "KA-POL-05::clause::7.2",
+          "KA-POL-05::clause::7.1",
+          "KA-POL-05::clause::7.3"
+        ],
+        "top_score": 0.9392907023429871,
+        "top_dense": 0.7087734036465534,
+        "top_rerank": 0.9392907023429871,
+        "timings": {
+          "bm25": 0.0008362000808119774,
+          "dense": 0.026091599953360856,
+          "rrf": 5.4299947805702686e-05,
+          "rerank": 2.0110652999719605
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q30",
+        "category": "cross_reference",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.4",
+          "KA-POL-03::clause::6.6",
+          "KA-POL-01::clause::6.1",
+          "KA-POL-03::clause::6.5",
+          "KA-POL-05::clause::9.1"
+        ],
+        "top_score": 0.9144012928009033,
+        "top_dense": 0.7757915258183125,
+        "top_rerank": 0.9144012928009033,
+        "timings": {
+          "bm25": 0.000485299970023334,
+          "dense": 0.026367700076662004,
+          "rrf": 5.150004290044308e-05,
+          "rerank": 2.314334599999711
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q31",
+        "category": "cross_reference",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-03::clause::7.1",
+          "KA-POL-03::clause::7.2",
+          "KA-POL-03::clause::2.2",
+          "KA-POL-03::clause::6.4",
+          "KA-POL-03::clause::6.6"
+        ],
+        "top_score": 0.9994650483131409,
+        "top_dense": 0.8044100627108349,
+        "top_rerank": 0.9994650483131409,
+        "timings": {
+          "bm25": 0.0004545999690890312,
+          "dense": 0.02886179997585714,
+          "rrf": 8.79999715834856e-05,
+          "rerank": 2.0264271999476478
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q32",
+        "category": "cross_reference",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-02::clause::10.2",
+          "KA-POL-01::clause::4.4",
+          "KA-POL-01::clause::2.4",
+          "KA-POL-02::clause::10.1",
+          "KA-POL-02::clause::2.2"
+        ],
+        "top_score": 0.7894788384437561,
+        "top_dense": 0.7286902510434542,
+        "top_rerank": 0.7894788384437561,
+        "timings": {
+          "bm25": 0.00031699996907263994,
+          "dense": 0.02463900006841868,
+          "rrf": 7.040007039904594e-05,
+          "rerank": 2.1602257000049576
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q33",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.1",
+          "KA-POL-01::clause::3.4",
+          "KA-POL-01::clause::6.2",
+          "KA-POL-02::clause::3.1",
+          "KA-POL-03::clause::6.6"
+        ],
+        "top_score": 0.9978464841842651,
+        "top_dense": 0.8561375446478137,
+        "top_rerank": 0.9978464841842651,
+        "timings": {
+          "bm25": 0.00043430004734545946,
+          "dense": 0.022446900024078786,
+          "rrf": 4.7600013203918934e-05,
+          "rerank": 1.830628199968487
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q34",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::3.4",
+          "KA-POL-01::clause::6.1",
+          "KA-POL-01::clause::3.1",
+          "KA-POL-02::clause::3.1",
+          "KA-POL-01::clause::3.2"
+        ],
+        "top_score": 0.9774033427238464,
+        "top_dense": 0.7841022148194943,
+        "top_rerank": 0.9774033427238464,
+        "timings": {
+          "bm25": 0.0003330999752506614,
+          "dense": 0.023817399982362986,
+          "rrf": 9.099999442696571e-05,
+          "rerank": 1.571825599996373
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q35",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.2",
+          "KA-POL-01::clause::3.3",
+          "KA-POL-01::clause::3.4",
+          "KA-POL-01::clause::6.1",
+          "KA-AMD-2026-01::clause::2.1"
+        ],
+        "top_score": 0.9854868650436401,
+        "top_dense": 0.8261021425002396,
+        "top_rerank": 0.9854868650436401,
+        "timings": {
+          "bm25": 0.00035690004006028175,
+          "dense": 0.023072200012393296,
+          "rrf": 8.679996244609356e-05,
+          "rerank": 1.8181419000029564
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q36",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-01::clause::6.6",
+          "KA-POL-02::clause::3.4",
+          "KA-POL-02::clause::9.1",
+          "KA-POL-02::clause::3.1",
+          "KA-POL-02::clause::3.2"
+        ],
+        "top_score": 0.9865742325782776,
+        "top_dense": 0.831484625203867,
+        "top_rerank": 0.9865742325782776,
+        "timings": {
+          "bm25": 0.0009209000272676349,
+          "dense": 0.027651699958369136,
+          "rrf": 8.479994721710682e-05,
+          "rerank": 1.9537860000273213
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q37",
+        "category": "near_duplicate",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::2.2",
+          "KA-POL-05::clause::2.1",
+          "KA-POL-02::clause::3.3",
+          "KA-POL-05::clause::3.1",
+          "KA-POL-05::clause::4.2"
+        ],
+        "top_score": 0.9846595525741577,
+        "top_dense": 0.7811681279646672,
+        "top_rerank": 0.9846595525741577,
+        "timings": {
+          "bm25": 0.0004154000198468566,
+          "dense": 0.023154200054705143,
+          "rrf": 4.930002614855766e-05,
+          "rerank": 1.9765053000301123
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q38",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-05::clause::5.1",
+          "KA-AMD-2026-01::clause::1.1",
+          "KA-POL-05::clause::5.2",
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::2.1"
+        ],
+        "top_score": 0.9961422085762024,
+        "top_dense": 0.8267845104740033,
+        "top_rerank": 0.9961422085762024,
+        "timings": {
+          "bm25": 0.0005532000213861465,
+          "dense": 0.030170500045642257,
+          "rrf": 7.180008105933666e-05,
+          "rerank": 2.087383900070563
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q39",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-POL-05::clause::6.1",
+          "KA-AMD-2026-01::clause::1.2",
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::5.1",
+          "KA-AMD-2026-01::clause::1.1"
+        ],
+        "top_score": 0.8824746608734131,
+        "top_dense": 0.7105414805177488,
+        "top_rerank": 0.8824746608734131,
+        "timings": {
+          "bm25": 0.00033409998286515474,
+          "dense": 0.024777899961918592,
+          "rrf": 7.409998215734959e-05,
+          "rerank": 2.1403516000136733
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q40",
+        "category": "amendment",
+        "source_match": "all",
+        "top_ids": [
+          "KA-AMD-2026-01::clause::2.1",
+          "KA-POL-01::clause::4.3",
+          "KA-POL-02::clause::5.1",
+          "KA-POL-02::clause::3.3",
+          "KA-POL-02::clause::4.2"
+        ],
+        "top_score": 0.8631839156150818,
+        "top_dense": 0.7301409989822917,
+        "top_rerank": 0.8631839156150818,
+        "timings": {
+          "bm25": 0.00042280007619410753,
+          "dense": 0.02472680003847927,
+          "rrf": 5.349994171410799e-05,
+          "rerank": 1.9015507000731304
+        },
+        "recall@5": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q41",
+        "category": "amendment",
+        "source_match": "any",
+        "top_ids": [
+          "KA-POL-05::clause::5.1",
+          "KA-AMD-2026-01::clause::1.1",
+          "KA-POL-05::clause::4.2",
+          "KA-POL-05::clause::5.2",
+          "KA-POL-05::clause::3.1"
+        ],
+        "top_score": 0.995822548866272,
+        "top_dense": 0.8212484554067491,
+        "top_rerank": 0.995822548866272,
+        "timings": {
+          "bm25": 0.0003122999332845211,
+          "dense": 0.022787800058722496,
+          "rrf": 8.309993427246809e-05,
+          "rerank": 1.9704424999654293
+        },
+        "rank": 1,
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "rr": 1.0,
+        "success@5": true
+      },
+      {
+        "id": "q42",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-POL-04::clause::1.1",
+          "KA-POL-01::clause::1.2",
+          "KA-POL-02::clause::3.3",
+          "KA-POL-02::clause::6.1",
+          "KA-POL-01::clause::5.3"
+        ],
+        "top_score": 0.007739565335214138,
+        "top_dense": 0.5968510338691109,
+        "top_rerank": 0.007739565335214138,
+        "timings": {
+          "bm25": 0.00028789998032152653,
+          "dense": 0.0239751999033615,
+          "rrf": 6.720004603266716e-05,
+          "rerank": 2.3647079000947997
+        }
+      },
+      {
+        "id": "q43",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-AMD-2026-01::clause::2.1",
+          "KA-AMD-2026-01::clause::1.1",
+          "KA-POL-05::clause::1.1",
+          "KA-POL-01::clause::5.2",
+          "KA-AMD-2026-01::clause::preamble"
+        ],
+        "top_score": 0.02885390631854534,
+        "top_dense": 0.6216825550953655,
+        "top_rerank": 0.02885390631854534,
+        "timings": {
+          "bm25": 0.0004813000559806824,
+          "dense": 0.023565099923871458,
+          "rrf": 5.509995389729738e-05,
+          "rerank": 1.8827818999998271
+        }
+      },
+      {
+        "id": "q44",
+        "category": "out_of_scope",
+        "source_match": "none",
+        "top_ids": [
+          "KA-POL-01::clause::1.1",
+          "KA-POL-04::clause::5.1",
+          "KA-POL-03::clause::7.1",
+          "KA-POL-04::clause::5.3",
+          "KA-POL-05::clause::2.2"
+        ],
+        "top_score": 0.007506732828915119,
+        "top_dense": 0.6230875407075447,
+        "top_rerank": 0.007506732828915119,
+        "timings": {
+          "bm25": 0.0002807999262586236,
+          "dense": 0.027772400062531233,
+          "rrf": 3.569992259144783e-05,
+          "rerank": 2.1326415999792516
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+# Versions this project was built and tested with (Python 3.14, CPU only).
+pypdf>=6.0
+rank_bm25>=0.2.2
+qdrant-client>=1.15          # query_points() and collection_exists()
+sentence-transformers>=5.0   # embeddings + CrossEncoder reranker
+torch>=2.0                   # CPU build is enough
+ollama>=0.6
+streamlit>=1.40
