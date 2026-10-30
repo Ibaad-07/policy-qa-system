@@ -129,35 +129,4 @@ entry point builds its config with `pipeline_config(**overrides)`.
   answers as unfaithful and missing a wrong number. Treat it as a curiosity;
   the deterministic checks are the main signal.
 
-## Results
 
-<!-- Fill in from results/retrieval.md and results/answers.md -->
-
-### Retrieval (hit@5 / MRR)
-
-| config | recursive | clause |
-|---|---|---|
-| dense | | |
-| bm25 | | |
-| hybrid | | |
-| hybrid + rerank | | |
-| hybrid + rerank + HyDE | | |
-| hybrid + rerank + multi-query | | |
-
-### Answers (pass rate per category)
-
-| category | pass rate |
-|---|---|
-| exact_id | |
-| paraphrase | |
-| detail | |
-| exception | |
-| cross_reference | |
-| near_duplicate | |
-| amendment | |
-| out_of_scope | |
-| **overall** | |
-
-### Observations
-
--
